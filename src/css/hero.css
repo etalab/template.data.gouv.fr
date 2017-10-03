@@ -1,0 +1,39 @@
+.hero {
+  height: 38vh;
+  min-height: 18em;
+  width: 100%;
+  color: #fff;
+  background-color: var(--theme-background-grey);
+  background-blend-mode: darken;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.hero__white-background {
+  padding: 10px 1em;
+  background-color: white;
+}
+
+.hero h1 {
+  margin: 0 0 0.5em;
+  color: var(--theme-dark-text);
+}
+
+.hero p {
+  margin: 0;
+  color: var(--theme-dark-text);
+  font-size: 1.2em;
+  font-style: italic;
+}

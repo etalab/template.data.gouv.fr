@@ -1,0 +1,24 @@
+{
+  "name": "template.data.gouv.fr",
+  "version": "1.0.0",
+  "description": "Template CSS pour data.gouv.fr et compagnie.",
+  "license": "MIT",
+  "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "cssnano": "^3.10.0",
+    "gh-pages": "^1.0.0",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-reporter": "^5.0.0",
+    "stylelint": "^8.1.1",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "scripts": {
+    "deploy": "yarn dist && gh-pages -d dist",
+    "dev": "postcss --output main.css --watch src/css/index.css",
+    "dist": "yarn dist-css && yarn dist-site",
+    "dist-css": "NODE_ENV=production postcss --output dist/main.css src/css/index.css",
+    "dist-site": "copyfiles images/* fonts/**/* index.html dist"
+  }
+}

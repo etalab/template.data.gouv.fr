@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -2em;
+  margin-right: -2em;
+}
+
+.row p {
+  margin: 0 2em;
+  max-width: 20em;
+}

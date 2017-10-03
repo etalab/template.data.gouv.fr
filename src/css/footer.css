@@ -1,0 +1,40 @@
+.footer {
+  background: var(--theme-background-dark);
+  color: var(--white);
+  padding: 2em 0;
+  line-height: 2em;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__social {
+  margin-top: 1em;
+}
+
+.footer__social li {
+  display: inline;
+  margin-right: 1em;
+}
+
+.footer__social img {
+  width: 25px;
+}
+
+.footer__links {
+  margin: 0;
+}
+
+.footer__links h2 {
+  margin-top: 0;
+  margin-bottom: .5em;
+}

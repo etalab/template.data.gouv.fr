@@ -1,0 +1,26 @@
+:root {
+  --blue: #49A5d6;
+  --dark-blue: #3882A9;
+  --white: #FFF;
+  --almost-black: #404040;
+  --black: #1C1C1C;
+  --light-grey: #E7E7E7;
+  --grey: #DADADA;
+  --dark-grey: #CDCDCD;
+
+  --theme-primary: var(--blue);
+  --theme-primary-darker: var(--blue);
+  --theme-secondary: var(--blue);
+  --theme-secondary-darken: var(--dark-blue);
+
+  --theme-border: var(--dark-grey);
+  --theme-border-lighter: var(--grey);
+
+  --theme-background-white: var(--white);
+  --theme-background-grey: var(--light-grey);
+  --theme-background-color: var(--blue);
+  --theme-background-dark: var(--black);
+
+  --theme-box-shadow: var(--grey);
+  --theme-dark-text: var(--almost-black);
+}

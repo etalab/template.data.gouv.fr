@@ -1,0 +1,16 @@
+node_modules
+dist/*
+!dist/.gitkeep
+yarn-error.log
+/main.css
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*

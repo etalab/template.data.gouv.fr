@@ -1,0 +1,26 @@
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 16px 20px;
+  font: inherit;
+  line-height: 1.6;
+  color: var(--black);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.form__container {
+  max-width: 30em;
+  margin: auto;
+}
+
+.form__group {
+  display: block;
+  margin-bottom: 1em;
+}
