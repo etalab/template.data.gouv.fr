@@ -40,6 +40,10 @@
   display: inline;
 }
 
+.nav__links a {
+  color: var(--black);
+}
+
 .side-nav,
 .button-collapse {
   display: none;
