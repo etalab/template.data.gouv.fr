@@ -17,6 +17,7 @@
   "scripts": {
     "deploy": "yarn dist && gh-pages -d dist",
     "dev": "postcss --output main.css --watch src/css/index.css",
+    "lint": "stylelint --fix src/css/*.css",
     "dist": "yarn dist-css && yarn dist-site",
     "dist-css": "NODE_ENV=production postcss --output dist/main.css src/css/index.css",
     "dist-site": "copyfiles images/* fonts/**/* index.html dist"

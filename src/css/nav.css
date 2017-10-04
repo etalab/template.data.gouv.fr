@@ -31,7 +31,7 @@
   text-align: right;
 }
 
-.nav__links li+li {
+.nav__links li + li {
   padding-left: 15px;
 }
 
