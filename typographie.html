@@ -33,7 +33,7 @@
   <meta name="og:site_name" content="Titre chili con carne">
   <meta name="og:locale" content="fr_FR">
   <meta name="og:type" content="website">
-  
+
   <!-- Favicons -->
   <meta name="theme-color" content="#ffffff">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
@@ -46,86 +46,29 @@
 <body>
   <nav class="nav">
     <div class="nav__container">
-      <img class="nav__logo" src="images/logo_site.svg" alt="Accueil de template.data.gouv.fr" />
+      <a href="./index.html"><img class="nav__logo" src="images/logo_site.svg" alt="Accueil de template.data.gouv.fr" /></a>
 
       <ul class="nav__links">
-        <li><a href="./couleurs.html">Couleurs</a></li>
         <li><a href="./typographie.html">Typographie</a></li>
+        <li><a href="./couleurs.html">Couleurs</a></li>
         <li><a href="#">Données</a></li>
         <li><a href="#">API</a></li>
         <li><a href="#">Outils</a></li>
         <li><a href="#">FAQ</a></li>
-        <li>
-          <div class="dropdown">
-            Langage
-            <div class="dropdown-content">
-              <a href="#">Français 🇫🇷</a>
-              <a href="#">Anglais 🇬🇧</a>
-            </div>
-          </div>
-        </li>
       </ul>
     </div>
   </nav>
 
-  <div class="hero">
-    <div class="hero__container">
-      <h1 class="hero__white-background">Titre chili con carne</h1>
-      <p class="hero__white-background">Tagline libérer les données sans effort et sur data.gouv.fr</p>
-    </div>
-  </div>
-
-  <section class="section-dark">
-    <div class="container">
-      <h2 class="section__title">Titre de section</h2>
-      <p class="section__subtitle">Sous-titre de section</p>
-
-      <div class="row">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2 class="section__title">Titre de section</h2>
-      <p class="section__subtitle">Sous-titre de section</p>
-
-      <div class="row">
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-color">
-    <div class="container">
-      <h2 class="section__title">Titre de section</h2>
-      <p class="section__subtitle">Sous-titre de section</p>
-
-      <div class="row">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-  </section>
-
   <section class="section-grey">
     <div class="container">
-      <div class="form__container">
-        <form action="" method="post" name="form" target="_blank" novalidate>
-          <div class="form__group">
-            <label for="email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
-            <input type="email" value="" name="email" id="email">
-          </div>
-
-          <button class="button" type="submit" name="subscribe" id="submit">Valider</button>
-        </form>
+      <div class="panel">
+        <h1>Typography</h1>
+        <p>Nous utilisons les polices <a>Source Sans Pro</a> pour le corps de texte et <a>Evolventa</a> pour les titres sur <a>data.gouv.fr</a> et sites parents.</p>
+        <div class="typography__sample"><h1>Heading 1</h1><div class="typography__caption">Evolventa, 30px</div></div>
+        <div class="typography__sample"><h2>Heading 2</h2><div class="typography__caption">Evolventa, 24px</div></div>
+        <div class="typography__sample"><h3>Heading 3</h3><div class="typography__caption">Evolventa, 20px</div></div>
+        <div class="typography__sample"><h4>Heading 4</h4><div class="typography__caption">Evolventa, 16px</div></div>
+        <div class="typography__sample"><a>Lien</a><div class="typography__caption">Source Sans Pro, 16px</div>
       </div>
     </div>
   </section>
