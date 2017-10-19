@@ -33,7 +33,7 @@
   <meta name="og:site_name" content="Titre chili con carne">
   <meta name="og:locale" content="fr_FR">
   <meta name="og:type" content="website">
-
+  
   <!-- Favicons -->
   <meta name="theme-color" content="#ffffff">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
@@ -49,13 +49,22 @@
       <a href="./index.html"><img class="nav__logo" src="images/logo_site.svg" alt="Accueil de template.data.gouv.fr" /></a>
 
       <ul class="nav__links">
-        <li><a href="./form.html">Form</a></li>
+        <li><a class="active" href="./form.html">Form</a></li>
         <li><a href="./typographie.html">Typographie</a></li>
         <li><a href="./couleurs.html">Couleurs</a></li>
         <li><a href="#">Données</a></li>
         <li><a href="#">API</a></li>
         <li><a href="#">Outils</a></li>
         <li><a href="#">FAQ</a></li>
+        <li>
+          <div class="dropdown">
+            Langage
+            <div class="dropdown-content">
+              <a href="#">Français 🇫🇷</a>
+              <a href="#">Anglais 🇬🇧</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
@@ -63,13 +72,38 @@
   <section class="section-grey">
     <div class="container">
       <div class="panel">
-        <h1>Typography</h1>
-        <p>Nous utilisons les polices <a>Source Sans Pro</a> pour le corps de texte et <a>Evolventa</a> pour les titres sur <a>data.gouv.fr</a> et sites parents.</p>
-        <div class="typography__sample"><h1>Heading 1</h1><div class="typography__caption">Evolventa, 30px</div></div>
-        <div class="typography__sample"><h2>Heading 2</h2><div class="typography__caption">Evolventa, 24px</div></div>
-        <div class="typography__sample"><h3>Heading 3</h3><div class="typography__caption">Evolventa, 20px</div></div>
-        <div class="typography__sample"><h4>Heading 4</h4><div class="typography__caption">Evolventa, 16px</div></div>
-        <div class="typography__sample"><a>Lien</a><div class="typography__caption">Source Sans Pro, 16px</div>
+        <h1>Form</h1>
+        <form action="" method="post" name="form" target="_blank" novalidate>
+          <div class="form__group">
+            <label for="email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
+            <input type="email" value="" name="email" id="email">
+          </div>
+
+          <div class="form__group">
+            <label>Radio</label>
+            <input type="radio" name="radio" id="radio-pup" value="1" /><label for="radio-pup" class="label-inline">Chiots</label>
+            <input type="radio" name="radio" id="radio-kitten" value="0" /><label for="radio-kitten" class="label-inline">Chatons</label>
+          </div>
+
+          <div class="form__group">
+            <label>Checkbox</label>
+            <input type="checkbox" name="checkbox" id="checkbox-blue" value="0" /><label for="checkbox-blue" class="label-inline">Fraises</label>
+            <input type="checkbox" name="checkbox" id="checkbox-green" value="1" /><label for="checkbox-green" class="label-inline">Bananes</label>
+            <input type="checkbox" name="checkbox" id="checkbox-red" value="2" /><label for="checkbox-red" class="label-inline">Ananas</label>
+          </div>
+
+          <div class="form__group">
+            <label for="select">Select</label>
+            <select id="select">
+              <option>Choisissez...</option>
+              <option>Frites</option>
+              <option>Salade</option>
+            </select>
+          </div>
+
+          <button class="button" type="submit" name="subscribe" id="submit">Valider</button>
+
+        </form>
       </div>
     </div>
   </section>
