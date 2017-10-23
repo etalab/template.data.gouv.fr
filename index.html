@@ -46,12 +46,12 @@
 <body>
   <nav class="nav">
     <div class="nav__container">
-      <a href="./index.html"><img class="nav__logo" src="images/logo_site.svg" alt="Accueil de template.data.gouv.fr" /></a>
+      <img class="nav__logo" src="images/logo_site.svg" alt="Accueil de template.data.gouv.fr" />
 
       <ul class="nav__links">
-        <li><a href="./form.html">Form</a></li>
-        <li><a href="./typographie.html">Typographie</a></li>
-        <li><a href="./couleurs.html">Couleurs</a></li>
+        <li><a href="#typography">Typographie</a></li>
+        <li><a href="#colors">Couleurs</a></li>
+        <li><a href="#form">Form</a></li>
         <li><a href="#">Données</a></li>
         <li><a href="#">API</a></li>
         <li><a href="#">Outils</a></li>
@@ -116,12 +116,237 @@
     </div>
   </section>
 
+  <section id="typography">
+    <div class="container">
+      <h1>Typography</h1>
+      <p>Nous utilisons les polices <a>Source Sans Pro</a> pour le corps de texte et <a>Evolventa</a> pour les titres sur <a>data.gouv.fr</a> et sites parents.</p>
+      <div class="typography__sample"><h1>Heading 1</h1><div class="typography__caption">Evolventa, 30px</div></div>
+      <div class="typography__sample"><h2>Heading 2</h2><div class="typography__caption">Evolventa, 24px</div></div>
+      <div class="typography__sample"><h3>Heading 3</h3><div class="typography__caption">Evolventa, 20px</div></div>
+      <div class="typography__sample"><h4>Heading 4</h4><div class="typography__caption">Evolventa, 16px</div></div>
+      <div class="typography__sample"><a>Lien</a><div class="typography__caption">Source Sans Pro, 16px</div>
+    </div>
+  </section>
+
+  <section class="section-grey" id="colors">
+    <div class="container">
+      <div class="panel">
+        <h1>Couleurs</h1>
+        <div class="color-panel primary">
+          <div class="color-panel__block">
+            <div class="color-panel__sample primary-medium">
+            </div>
+            <div class="color-panel__name">
+              <h4>Medium</h4>
+              #0081D5
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample primary-light">
+            </div>
+            <div class="color-panel__name">
+              <h4>Light</h4>
+              #1E90DA
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample primary-dark">
+            </div>
+            <div class="color-panel__name">
+              <h4>Dark</h4>
+              #006CB0
+            </div>
+          </div>
+        </div>
+
+        <div class="color-panel grayscale">
+          <div class="color-panel__block">
+            <div class="color-panel__sample white">
+            </div>
+            <div class="color-panel__name">
+              <h4>White</h4>
+              #FFFFFF
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample lighter-grey">
+            </div>
+            <div class="color-panel__name">
+              <h4>Lighter grey</h4>
+              #EBEFF3
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample light-grey">
+            </div>
+            <div class="color-panel__name">
+              <h4>Light grey</h4>
+              #C9D3DF
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample grey">
+            </div>
+            <div class="color-panel__name">
+              <h4>Grey</h4>
+              #ADB9C9
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample dark-grey">
+            </div>
+            <div class="color-panel__name">
+              <h4>Dark grey</h4>
+              #8393A7
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample darker-grey">
+            </div>
+            <div class="color-panel__name">
+              <h4>Darker grey</h4>
+              #C9D3DF
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample almost-black">
+            </div>
+            <div class="color-panel__name">
+              <h4>Almost black</h4>
+              #374355
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample black">
+            </div>
+            <div class="color-panel__name">
+              <h4>Black</h4>
+              #1C1C1C
+            </div>
+          </div>
+        </div>
+
+        <div class="color-panel notifications">
+          <div class="color-panel__block">
+            <div class="color-panel__sample-double">
+              <div class="color-panel__sample green">
+              </div>
+              <div class="color-panel__sample light-green">
+              </div>
+            </div>
+            <div class="color-panel__name-double">
+              <div class="color-panel__name">
+                <h4>Green</h4>
+                #03BD5B
+              </div>
+              <div class="color-panel__name">
+                <h4>Light green</h4>
+                #DAF5E7
+              </div>
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample-double">
+              <div class="color-panel__sample orange">
+              </div>
+              <div class="color-panel__sample light-orange">
+              </div>
+            </div>
+            <div class="color-panel__name-double">
+              <div class="color-panel__name">
+                <h4>Orange</h4>
+                #FF9947
+              </div>
+              <div class="color-panel__name">
+                <h4>Light orange</h4>
+                #FFF0E4
+              </div>
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample-double">
+              <div class="color-panel__sample red">
+              </div>
+              <div class="color-panel__sample light-red">
+              </div>
+            </div>
+            <div class="color-panel__name-double">
+              <div class="color-panel__name">
+                <h4>Red</h4>
+                #D1335B
+              </div>
+              <div class="color-panel__name">
+                <h4>Light red</h4>
+                #F8E1E7
+              </div>
+            </div>
+          </div>
+          <div class="color-panel__block">
+            <div class="color-panel__sample-double">
+              <div class="color-panel__sample blue">
+              </div>
+              <div class="color-panel__sample light-blue">
+              </div>
+            </div>
+            <div class="color-panel__name-double">
+              <div class="color-panel__name">
+                <h4>Blue</h4>
+                #03BD5B
+              </div>
+              <div class="color-panel__name">
+                <h4>Light blue</h4>
+                #DAF5E7
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <div class="container">
+      <h1>Form</h1>
+      <form action="" method="post" name="form" target="_blank" novalidate>
+        <div class="form__group">
+          <label for="email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
+          <input type="email" value="" name="email" id="email">
+        </div>
+
+        <div class="form__group">
+          <label>Radio</label>
+          <input type="radio" name="radio" id="radio-pup" value="1" /><label for="radio-pup" class="label-inline">Chiots</label>
+          <input type="radio" name="radio" id="radio-kitten" value="0" /><label for="radio-kitten" class="label-inline">Chatons</label>
+        </div>
+
+        <div class="form__group">
+          <label>Checkbox</label>
+          <input type="checkbox" name="checkbox" id="checkbox-blue" value="0" /><label for="checkbox-blue" class="label-inline">Fraises</label>
+          <input type="checkbox" name="checkbox" id="checkbox-green" value="1" /><label for="checkbox-green" class="label-inline">Bananes</label>
+          <input type="checkbox" name="checkbox" id="checkbox-red" value="2" /><label for="checkbox-red" class="label-inline">Ananas</label>
+        </div>
+
+        <div class="form__group">
+          <label for="select">Select</label>
+          <select id="select">
+            <option>Choisissez...</option>
+            <option>Frites</option>
+            <option>Salade</option>
+          </select>
+        </div>
+
+        <button class="button" type="submit" name="subscribe" id="submit">Valider</button>
+
+      </form>
+    </div>
+  </section>
+
   <section class="section-grey">
     <div class="container">
       <div class="form__container">
         <form action="" method="post" name="form" target="_blank" novalidate>
           <div class="form__group">
-            <label for="email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
+            <label for="email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
             <input type="email" value="" name="email" id="email">
           </div>
 
