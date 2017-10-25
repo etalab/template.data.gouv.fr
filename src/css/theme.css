@@ -1,22 +1,49 @@
 :root {
-  --blue: #49a5d6;
-  --dark-blue: #3882a9;
+  --blue: #0081D5;
+  --light-blue: #1E90DA;
+  --dark-blue: #006CB0;
+  --lighter-blue: #B4E1FA;
+
   --white: #fff;
-  --almost-black: #404040;
+  --lighter-grey: #EBEFF3;
+  --light-grey: #C9D3DF;
+  --grey: #adb9c9;
+  --dark-grey: #8393A7;
+  --darker-grey: #53657D;
+  --almost-black: #374355;
   --black: #1c1c1c;
-  --light-grey: #e7e7e7;
-  --grey: #dadada;
-  --dark-grey: #cdcdcd;
+
+  --green: #03BD5B;
+  --light-green: #DAF5E7;
+  --orange: #FF9947;
+  --light-orange: #FFF0E4;
+  --red: #D1335B;
+  --light-red: #F8E1E7;
+
   --theme-primary: var(--blue);
-  --theme-primary-darker: var(--blue);
+  --theme-primary-light: var(--light-blue);
+  --theme-primary-dark: var(--dark-blue);
   --theme-secondary: var(--blue);
   --theme-secondary-darken: var(--dark-blue);
-  --theme-border: var(--dark-grey);
-  --theme-border-lighter: var(--grey);
+
+  --theme-border: var(--grey);
+  --theme-border-lighter: var(--light-grey);
+  --theme-border-active: var(--light-blue);
+  --theme-border-radius: 5px;
+
   --theme-background-white: var(--white);
-  --theme-background-grey: var(--light-grey);
+  --theme-background-grey: var(--lighter-grey);
   --theme-background-color: var(--blue);
   --theme-background-dark: var(--black);
-  --theme-box-shadow: var(--grey);
+  --theme-box-shadow: var(--light-grey);
   --theme-dark-text: var(--almost-black);
+
+  --theme-success-border: var(--green);
+  --theme-success-bg: var(--light-green);
+  --theme-warning-border: var(--orange);
+  --theme-warning-bg: var(--light-orange);
+  --theme-error-border: var(--red);
+  --theme-error-bg: var(--light-red);
+  --theme-info-border: var(--blue);
+  --theme-info-bg: var(--lighter-blue);
 }

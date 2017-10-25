@@ -1,18 +1,129 @@
-input {
+input,
+select {
   width: 100%;
-  border: none;
   outline: none;
-  padding: 16px 20px;
+  padding: 10px 15px;
   font: inherit;
   line-height: 1.6;
   color: var(--black);
-  border-radius: 2px;
+  border-radius: var(--theme-border-radius);
   box-sizing: border-box;
+  border: 1px solid var(--theme-border);
+  background: var(--theme-background-white);
+  vertical-align: middle;
+  position: relative;
+}
+
+input:focus,
+select:focus {
+  background-color: var(--theme-background-white);
+  border-color: var(--theme-primary);
+  transition: border-color 0.2s ease-out;
+}
+
+input[type=radio],
+input[type=checkbox] { 
+  margin-right: 6px;
+  margin-top: 0;
+}
+
+input[type=radio]:empty,
+input[type=checkbox]:empty {
+  background-color: var(--theme-background-grey);
+}
+
+input[type=radio] {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  appearance: none;
+  padding: 0;
+}
+
+input[type=radio]:before {
+  content: '';
+  border-color: var(--theme-primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  transform: scale(0);
+}
+
+input[type=radio]:checked {
+  background-color: var(--theme-background-white);
+  border-color: var(--theme-primary);
+  opacity: 1;
+}
+
+input[type=radio]:checked:before {
+  background-color: var(--theme-primary);
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  height: 22px;
+  width: 22px;
+  padding: 0;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--theme-primary);
+  border-color: var(--theme-primary);
+  opacity: 1;
+  transition: border-color 0.2s ease-in, background-color 0.2s ease-out;
+}
+
+input[type="checkbox"]:before {
+  transform: scale(0);
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 14px;
+  width: 14px;
+  background: url("images/icons/tick.svg") center center no-repeat;
+}
+
+input[type="checkbox"]:checked:before {
+  color: var(--white);
+  display: block;
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
+}
+
+select {
+  appearance: none;
+  background: var(--theme-background-white) url("images/icons/arrow-down.svg") no-repeat;
+  background-position: center right 1em;
+  background-size: 15px;
+  padding: 10px 35px 10px 15px;
+  border-radius: var(--theme-border-radius);
+}
+
+select:focus {
+  outline: none;
 }
 
 label {
   display: block;
   margin-bottom: 0.5em;
+  color: var(--almost-black);
+}
+
+label.label-inline {
+  display: inline;
+  color: var(--black);
+}
+
+.label-inline + input[type=radio],
+.label-inline + input[type=checkbox] {
+  margin-left: 10px;
 }
 
 .form__container {
@@ -23,4 +134,8 @@ label {
 .form__group {
   display: block;
   margin-bottom: 1em;
+}
+
+.form__group + .form__group {
+  margin-top: 2em;
 }
