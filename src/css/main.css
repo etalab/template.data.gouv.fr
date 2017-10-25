@@ -3,13 +3,23 @@ body {
   margin: 0;
   position: relative;
   overflow: auto;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 15px;
   background: var(--theme-background-grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Evolventa", "Trebuchet MS", sans-serif;
 }
 
 a,
 button {
   outline: none;
-  cursor: pointer;
 }
 
 a,

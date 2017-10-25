@@ -8,11 +8,11 @@ button.button:active,
 button.button:visited {
   display: inline-block;
   margin: 0 auto;
-  padding: 0.5em 3em;
+  padding: 0.85em 3em;
   color: #fff;
   background-color: var(--theme-secondary);
   border-bottom: 1px solid var(--theme-border);
-  border-radius: var(--theme-border-radius);
+  border-radius: 2px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
   border: 1px solid transparent;
   font-family: "Evolventa", "Trebuchet MS", sans-serif;

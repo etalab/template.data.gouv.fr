@@ -1,5 +1,4 @@
 .nav {
-  border-bottom: 1px solid var(--theme-box-shadow);
   box-shadow: 0 1px 4px var(--theme-box-shadow);
   width: 100%;
   background: #fff;
@@ -32,6 +31,10 @@
   text-align: right;
 }
 
+.nav__links li + li {
+  padding-left: 15px;
+}
+
 .nav__links li {
   padding: 0;
   display: inline;
@@ -39,17 +42,6 @@
 
 .nav__links a {
   color: var(--black);
-  padding: 0.4em 0.8em;
-  border-radius: 3px;
-}
-
-.nav__links a:after {
-  content: none;
-}
-
-.nav__links a.active {
-  background: var(--theme-primary);
-  color: var(--white);
 }
 
 .side-nav,

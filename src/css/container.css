@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-.container h1:first-of-type {
-  margin-top: 0;
-}
-
 @media (min-width: 400px) {
   .container {
     width: 85%;
