@@ -20,7 +20,3 @@ a:active {
   color: var(--theme-primary);
   text-decoration: none;
 }
-
-.content {
-  padding-top: 4.5em;
-}

@@ -127,3 +127,8 @@
 .color-panel__sample.light-blue {
   background: var(--light-blue);
 }
+
+.documentation {
+  border-top: 1px solid var(--theme-border-lighter);
+  border-bottom: 1px solid var(--theme-border-lighter);
+}
