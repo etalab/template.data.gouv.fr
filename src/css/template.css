@@ -52,78 +52,78 @@
 /* color blocks */
 
 .color-panel__sample.primary-medium {
-  background: #0081D5;
+  background: var(--blue);
 }
 
 .color-panel__sample.primary-light {
-  background: #1E90DA;
+  background: var(--light-blue);
 }
 
 .color-panel__sample.primary-dark {
-  background: #006CB0;
+  background: var(--dark-blue);
 }
 
 .color-panel__sample.white {
-  background: #FFFFFF;
-  border: 1px solid #C9D3DF;
+  background: var(--white);
+  border: 1px solid var(--theme-border-lighter);
 }
 
 .color-panel__sample.lighter-grey {
-  background: #EBEFF3;
+  background: var(--lighter-grey);
 }
 
 .color-panel__sample.light-grey {
-  background: #C9D3DF;
+  background: var(--light-grey);
 }
 
 .color-panel__sample.grey {
-  background: #adb9c9;
+  background: var(--grey);
 }
 
 .color-panel__sample.dark-grey {
-  background: #8393A7;
+  background: var(--dark-grey);
 }
 
 .color-panel__sample.darker-grey {
-  background: #53657D;
+  background: var(--darker-grey);
 }
 
 .color-panel__sample.almost-black {
-  background: #374355;
+  background: var(--almost-black);
 }
 
 .color-panel__sample.black {
-  background: #1c1c1c;
+  background: var(--black);
 }
 
 .color-panel__sample.green {
-  background: #03BD5B;
+  background: var(--green);
 }
 
 .color-panel__sample.light-green {
-  background: #DAF5E7;
+  background: var(--light-green);
 }
 
 .color-panel__sample.orange {
-  background: #FF9947;
+  background: var(--orange);
 }
 
 .color-panel__sample.light-orange {
-  background: #FFF0E4;
+  background: var(--light-orange);
 }
 
 .color-panel__sample.red {
-  background: #D1335B;
+  background: var(--red);
 }
 
 .color-panel__sample.light-red {
-  background: #F8E1E7;
+  background: var(--light-red);
 }
 
 .color-panel__sample.blue {
-  background: #0081D5;
+  background: var(--blue);
 }
 
 .color-panel__sample.light-blue {
-  background: #B4E1FA;
+  background: var(--light-blue);
 }
