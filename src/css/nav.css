@@ -52,11 +52,6 @@
   color: var(--white);
 }
 
-.side-nav,
-.button-collapse {
-  display: none;
-}
-
 @media (max-width: 550px) {
   .nav__links {
     padding-top: 0;
