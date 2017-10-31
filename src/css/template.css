@@ -6,7 +6,6 @@
     margin: 0;
 }
 
-
 .color-panel {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -131,4 +130,10 @@
 .documentation {
   border-top: 1px solid var(--theme-border-lighter);
   border-bottom: 1px solid var(--theme-border-lighter);
+}
+
+@media (--smaller-than-tablet) {
+  .color-panel {
+    grid-template-columns: 1fr;
+  }
 }
