@@ -12,7 +12,7 @@
   max-width: 20em;
 }
 
-@media (max-width: 550px) {
+@media (--smaller-than-phablet) {
   .row {
     flex-direction: column;
   }
