@@ -48,3 +48,15 @@
 .main-pane h1:first-child {
   margin-top: 0;
 }
+
+@media (--smaller-than-tablet) {
+  .documentation {
+    flex-direction: column;
+  }
+
+  .side-pane {
+    border-right: none;
+    border-bottom: 1px solid var(--theme-border-lighter);
+    flex: auto;
+  }
+}
