@@ -22,7 +22,7 @@ select:focus {
 }
 
 input[type=radio],
-input[type=checkbox] { 
+input[type=checkbox] {
   margin-right: 6px;
   margin-top: 0;
 }
@@ -41,7 +41,7 @@ input[type=radio] {
   padding: 0;
 }
 
-input[type=radio]:before {
+input[type=radio]::before {
   content: '';
   border-color: var(--theme-primary);
   border-radius: 50%;
@@ -59,7 +59,7 @@ input[type=radio]:checked {
   opacity: 1;
 }
 
-input[type=radio]:checked:before {
+input[type=radio]:checked::before {
   background-color: var(--theme-primary);
   transform: scale(1);
   transition: transform 0.2s ease-out;
@@ -79,7 +79,7 @@ input[type="checkbox"]:checked {
   transition: border-color 0.2s ease-in, background-color 0.2s ease-out;
 }
 
-input[type="checkbox"]:before {
+input[type="checkbox"]::before {
   transform: scale(0);
   content: '';
   position: absolute;
@@ -90,7 +90,7 @@ input[type="checkbox"]:before {
   background: url("images/icons/tick.svg") center center no-repeat;
 }
 
-input[type="checkbox"]:checked:before {
+input[type="checkbox"]:checked::before {
   color: var(--white);
   display: block;
   transform: scale(1);
