@@ -19,4 +19,5 @@ a:visited,
 a:active {
   color: var(--theme-primary);
   text-decoration: none;
+  transition: color 0.2s ease-out;
 }

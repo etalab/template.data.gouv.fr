@@ -124,7 +124,7 @@
 }
 
 .color-panel__sample.light-blue {
-  background: var(--light-blue);
+  background: var(--lighter-blue);
 }
 
 .documentation {

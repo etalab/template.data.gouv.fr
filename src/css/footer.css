@@ -1,5 +1,5 @@
 .footer {
-  background: var(--theme-background-dark);
+  background: var(--almost-black);
   color: var(--white);
   padding: 2em 0;
   line-height: 2em;
@@ -37,4 +37,8 @@
 .footer__links h2 {
   margin-top: 0;
   margin-bottom: 0.5em;
+}
+
+.footer__links a {
+  color: var(--white);
 }
