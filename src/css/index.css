@@ -1,13 +1,13 @@
 @import "theme.css";
 @import "media-queries.css";
 @import "typography.css";
+@import "main.css";
 @import "code.css";
 @import "button.css";
 @import "container.css";
 @import "fonts.css";
 @import "footer.css";
 @import "hero.css";
-@import "main.css";
 @import "nav.css";
 @import "dropdown.css";
 @import "grid.css";
@@ -15,5 +15,7 @@
 @import "sections.css";
 @import "form.css";
 @import "documentation.css";
-@import "template.css";
 @import "article.css";
+
+/* template-specific style */
+@import "template.css";
