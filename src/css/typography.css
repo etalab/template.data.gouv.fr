@@ -33,3 +33,15 @@ h4 {
 .subtitle {
   color: var(--dark-grey);
 }
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
