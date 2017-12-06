@@ -3,16 +3,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: -2em;
-  margin-right: -2em;
+  width: 100%
 }
 
 .row .column {
   margin: 0 2em;
-  max-width: 20em;
+  max-width: 50em;
 }
 
-@media (--smaller-than-phablet) {
+@media (--smaller-than-tablet) {
   .row {
     flex-direction: column;
   }

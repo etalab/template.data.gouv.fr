@@ -30,6 +30,11 @@ h4 {
   font-size: 1em;
 }
 
+p {
+    max-width: 45em;
+    line-height: 1.5em;
+}
+
 .subtitle {
   color: var(--dark-grey);
 }
