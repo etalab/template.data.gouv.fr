@@ -30,7 +30,7 @@ button.button:hover {
 a.button:active,
 button.button:active {
   transform: translateY(2px);
-  border-bottom: 0px;
+  border-bottom: 0;
   margin-bottom: 2px;
   box-shadow: none;
 }
