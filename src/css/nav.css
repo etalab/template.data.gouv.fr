@@ -18,10 +18,17 @@
   align-items: center;
 }
 
-.nav__home,
-.nav__logo {
+.nav__home {
   height: 40px;
+}
+
+.nav__link {
   padding: 1em;
+  height: 40px;
+}
+
+.nav__logo {
+  height: 100%;
 }
 
 .nav__links {
