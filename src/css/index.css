@@ -1,6 +1,7 @@
 @import "theme.css";
 @import "media-queries.css";
 @import "typography.css";
+@import "icons.css";
 @import "main.css";
 @import "code.css";
 @import "button.css";
@@ -18,4 +19,4 @@
 @import "article.css";
 
 /* template-specific style */
-@import "template.css";
+@import "template.css"

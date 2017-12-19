@@ -26,8 +26,10 @@
   margin-right: 1em;
 }
 
-.footer__social img {
-  width: 25px;
+.footer__social .icon {
+  width: 35px;
+  height: 35px;
+  fill: var(--white);
 }
 
 .footer__links {
