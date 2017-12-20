@@ -2,7 +2,6 @@
   background: var(--almost-black);
   color: var(--white);
   padding: 2em 0;
-  line-height: 2em;
 }
 
 .footer .container {
@@ -33,6 +32,7 @@
 
 .footer__links {
   margin: 0;
+  line-height: 2em;
 }
 
 .footer__links h2 {

@@ -8,7 +8,7 @@ button.button:active,
 button.button:visited {
   display: inline-block;
   margin: 0 auto;
-  padding: 0.5em 3em;
+  padding: 0.5em 2em;
   color: #fff;
   background-color: var(--theme-secondary);
   border-radius: var(--theme-border-radius);

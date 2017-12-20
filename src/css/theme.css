@@ -25,7 +25,7 @@
   --theme-border: var(--grey);
   --theme-border-lighter: var(--light-grey);
   --theme-border-active: var(--light-blue);
-  --theme-border-radius: 5px;
+  --theme-border-radius: 3px;
   --theme-background-white: var(--white);
   --theme-background-grey: var(--lighter-grey);
   --theme-background-color: var(--blue);
