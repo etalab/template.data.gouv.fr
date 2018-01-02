@@ -31,7 +31,7 @@ h4 {
 }
 
 p {
-  max-width: 45em;
+  max-width: 35em; /* best for a 80 characters per line */
   line-height: 1.5em;
 }
 

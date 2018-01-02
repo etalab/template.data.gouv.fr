@@ -2,14 +2,12 @@
   background: var(--almost-black);
   color: var(--white);
   padding: 2em 0;
-  line-height: 2em;
 }
 
 .footer .container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-bottom: 2em;
 }
 
 .footer ul {
@@ -26,12 +24,15 @@
   margin-right: 1em;
 }
 
-.footer__social img {
-  width: 25px;
+.footer__social .icon {
+  width: 35px;
+  height: 35px;
+  fill: var(--white);
 }
 
 .footer__links {
   margin: 0;
+  line-height: 2em;
 }
 
 .footer__links h2 {
