@@ -1,13 +1,8 @@
 .hero {
   width: 100%;
   color: #fff;
-  background-color: var(--theme-background-grey);
-  background-blend-mode: darken;
-  background-image: url(images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: #45adc5;
+  background: linear-gradient(to right, #c969a6 0%, #e795a8 15%, #a4cfcd 43%, #45adc5 65%, #265c9f 100%);
 }
 
 .hero__container {
