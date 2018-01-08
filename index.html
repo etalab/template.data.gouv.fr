@@ -79,7 +79,7 @@
         <title>twitter</title>
         <path d="M32,7.075c-1.175,0.525 -2.444,0.875 -3.769,1.031c1.356,-0.813 2.394,-2.1 2.887,-3.631c-1.269,0.75 -2.675,1.3 -4.169,1.594c-1.2,-1.275 -2.906,-2.069 -4.794,-2.069c-3.625,0 -6.563,2.938 -6.563,6.563c0,0.512 0.056,1.012 0.169,1.494c-5.456,-0.275 -10.294,-2.888 -13.531,-6.862c-0.563,0.969 -0.887,2.1 -0.887,3.3c0,2.275 1.156,4.287 2.919,5.463c-1.075,-0.031 -2.087,-0.331 -2.975,-0.819c0,0.025 0,0.056 0,0.081c0,3.181 2.263,5.838 5.269,6.437c-0.55,0.15 -1.131,0.231 -1.731,0.231c-0.425,0 -0.831,-0.044 -1.237,-0.119c0.838,2.606 3.263,4.506 6.131,4.563c-2.25,1.762 -5.075,2.813 -8.156,2.813c-0.531,0 -1.05,-0.031 -1.569,-0.094c2.913,1.869 6.362,2.95 10.069,2.95c12.075,0 18.681,-10.006 18.681,-18.681c0,-0.287 -0.006,-0.569 -0.019,-0.85c1.281,-0.919 2.394,-2.075 3.275,-3.394l0,-0.001Z"/>
       </symbol>
-      
+
       <symbol id="icon-cross">
           <title>cross</title>
           <path d="M10 0c5.519 0 10 4.481 10 10s-4.481 10-10 10S0 15.519 0 10 4.481 0 10 0zm3.975 7.56a4.673 4.673 0 0 0-1.535-1.535L10 8.465l-2.44-2.44A4.673 4.673 0 0 0 6.025 7.56L8.465 10l-2.44 2.44c.384.625.91 1.151 1.535 1.535l2.44-2.44 2.44 2.44a4.673 4.673 0 0 0 1.535-1.535L11.535 10l2.44-2.44z"/>
@@ -359,7 +359,7 @@
           <label for="search">Tapez un mot-clef :</label>
           <div class="search__group">
             <input type="text" class="" value="" name="search" id="search">
-            <button class="overlay-button">
+            <button class="overlay-button" aria-label="Recherche">
               <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
             </button>
           </div>
@@ -434,11 +434,11 @@ code {
       <div class="form__container">
         <form action="" method="post" name="form" target="_blank" novalidate>
           <div class="form__group">
-            <label for="email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
-            <input type="email" value="" name="email" id="email">
+            <label for="form-email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
+            <input type="email" value="" name="email" id="form-email">
           </div>
 
-          <button class="button" type="submit" name="subscribe" id="submit">Valider</button>
+          <button class="button" type="submit" name="subscribe" id="form-submit">Valider</button>
         </form>
       </div>
     </div>
@@ -469,10 +469,10 @@ code {
   </section>
 
   <section class="notifications">
-    <div class="container">    
+    <div class="container">
       <div class="notification">The princess is in another castle.<button class="close" aria-label="Fermer"><svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg></button></div>
       <div class="notification success">Mission complete!<button class="close" aria-label="Fermer"><svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg></button></div>
-      <div class="notification warning">All you base are belong to us.<button class="close" aria-label="Fermer"><svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg></button></div>  
+      <div class="notification warning">All you base are belong to us.<button class="close" aria-label="Fermer"><svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg></button></div>
       <div class="notification error">Game over.<button class="close" aria-label="Fermer"><svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg></button></div>
     </div>
   </section>
@@ -480,12 +480,12 @@ code {
   <footer class="footer">
     <div class="container">
       <div class="footer__logo">
-        <img src="images/etalab.svg">
+        <img src="images/etalab.svg" alt="Logo Etalab">
         <ul class="footer__social">
-          <li><a href="https://www.twitter.com/etalab"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
-          <li><a href="https://www.github.com/etalab"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
-          <li><a href="https://www.facebook.com/etalab"><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a></li>
-          <li><a href="mailto:info@data.gouv.fr"><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg></a></li>
+          <li><a href="https://twitter.com/etalab" title="Twitter"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+          <li><a href="https://github.com/etalab" title="Github"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
+          <li><a href="https://www.facebook.com/etalab" title="Facebook"><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a></li>
+          <li><a href="mailto:info@data.gouv.fr" title="Nous écrire un mail"><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg></a></li>
         </ul>
       </div>
       <ul class="footer__links">
