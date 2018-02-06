@@ -31,6 +31,7 @@
   --theme-background-color: var(--blue);
   --theme-background-dark: var(--black);
   --theme-box-shadow: var(--light-grey);
+  --theme-label-text: var(--dark-grey);
   --theme-dark-text: var(--almost-black);
   --theme-success-border: var(--green);
   --theme-success-bg: var(--light-green);
