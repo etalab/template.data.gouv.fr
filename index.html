@@ -399,11 +399,20 @@
 
   <div id="documentation" class="documentation">
     <nav class="side-pane">
-      <ul>
-        <li class="side-pane__title"><h3>Lorem Ipsum</h3></li>
-        <li class="side-pane__link active"><a>Menu #1</a></li>
-        <li class="side-pane__link"><a>Menu #2</a></li>
-        <li class="side-pane__link"><a>Menu #3</a></li>
+      <ul class="side-pane__menu">
+        <li class="side-pane__title">
+          <h3>Lorem Ipsum</h3>
+        </li>
+        <li class="side-pane__dropdown unfolded active">
+          <a class="side-pane__link">Menu #1</a>
+          <ul class="side-pane__submenu">
+            <li><a class="side-pane__sublink" href="#">This is a sub-menu #1</a></li>
+            <li><a class="side-pane__sublink" href="#">Sub-menu #2</a></li>
+            <li class="active"><a class="side-pane__sublink" href="#">Another  sub-menu #3</a></li>
+            <li><a class="side-pane__sublink" href="#">Sub-menu #4</a></li>
+          </ul></li>
+        <li><a class="side-pane__link">Menu #2</a></li>
+        <li><a class="side-pane__link">Menu #3</a></li>
       </ul>
     </nav>
     <div class="main-pane">
