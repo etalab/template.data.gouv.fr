@@ -1,0 +1,42 @@
+.markdown img {
+  /* Prevent larger images to break layout */
+  max-width: 100%;
+  /* Center images smaller than width */
+  margin: auto;
+  display: block;
+
+}
+
+/* Allow images legends with the following syntax:
+  ![](path_to_image)
+  *image_caption* */
+.markdown img + em {
+  display: block;
+  text-align: center;
+  margin: 0.3em 0.1em;
+}
+
+/* Disable lists default indentation */
+.markdown ol, 
+.markdown ul {
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+.markdown li {
+  padding-left: 0.5em;
+}
+
+/* Lighter inline code element */
+code {
+  padding: 0 0.1em;
+  border-radius: 0.2em;
+}
+
+/* But <pre> block should be spaced */
+pre {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+  background-color: #ebeff3;
+}
