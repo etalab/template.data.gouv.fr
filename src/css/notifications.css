@@ -8,24 +8,6 @@
   position: relative;
 }
 
-.notification.success {
-  color: var(--theme-success-border);
-  background: var(--theme-success-bg);
-  border: 1px solid var(--theme-success-border);
-}
-
-.notification.warning {
-  color: var(--theme-warning-border);
-  background: var(--theme-warning-bg);
-  border: 1px solid var(--theme-warning-border);
-}
-
-.notification.error {
-  color: var(--theme-error-border);
-  background: var(--theme-error-bg);
-  border: 1px solid var(--theme-error-border);
-}
-
 .notification .close {
   border: 0;
   background: 0;
@@ -38,4 +20,38 @@
   fill: currentColor;
   width: 20px;
   height: 20px;
+}
+
+.notification.closable {
+  padding-right: 3em;
+}
+
+.notification.full-width {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.notification.full-width.closable .close {
+  right: unset;
+}
+
+.notification.success {
+  color: var(--theme-success-border);
+  background: var(--theme-success-bg);
+  border-color: var(--theme-success-border);
+}
+
+.notification.warning {
+  color: var(--theme-warning-border);
+  background: var(--theme-warning-bg);
+  border-color: var(--theme-warning-border);
+}
+
+.notification.error {
+  color: var(--theme-error-border);
+  background: var(--theme-error-bg);
+  border-color: var(--theme-error-border);
 }
