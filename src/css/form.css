@@ -173,3 +173,19 @@ fieldset {
   height: 15px;
   width: 15px;
 }
+
+.input__group {
+  display: flex;
+  flex-direction: row;
+}
+
+.input__group .icon-button,
+.input__group .icon-button:active {
+  margin-left: 1em;
+  padding: 0 0.8em;
+}
+
+.input__group .icon-button .icon {
+  width: 16px;
+  height: 16px;
+}
