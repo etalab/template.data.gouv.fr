@@ -43,3 +43,12 @@
 .footer__links a {
   color: var(--white);
 }
+
+.footer__logo {
+  width: 300px;
+  height: auto;
+}
+
+.footer__logo img {
+  width: 100%;
+}
