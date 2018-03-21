@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.panel+.panel {
+  margin-top: 2em;
+}
+
 .panel h1:first-of-type {
   margin-top: 0;
 }
