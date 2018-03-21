@@ -59,6 +59,16 @@ jobs:
           paths:
             - ./
 
+  test:
+    <<: *default_container
+    steps:
+      - *attach_workspace
+      - *restore_node_modules
+
+      - run:
+          name: Tests
+          command: yarn test
+
   build:
     <<: *default_container
     steps:
@@ -110,9 +120,13 @@ workflows:
     jobs:
       - install
 
-      - build:
+      - test:
           requires:
             - install
+
+      - build:
+          requires:
+            - test
 
       - deploy:
           requires:

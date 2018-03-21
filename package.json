@@ -18,6 +18,7 @@
     "deploy": "yarn dist && gh-pages -d dist",
     "dev": "postcss --output main.css --watch src/css/index.css",
     "lint": "stylelint --fix src/css/*.css",
+    "test": "stylelint src/css/*.css",
     "prepublish": "NODE_ENV=production postcss --output template.css src/css/index.css",
     "dist": "yarn dist-css && yarn dist-site",
     "dist-css": "NODE_ENV=production postcss --output dist/main.css src/css/index.css",
