@@ -57,8 +57,7 @@
 
 .nav__links a:hover,
 .nav__links .dropdown:hover {
-  background: var(--light-grey);
-  transition: background ease-out 0.5s;
+  background: var(--lighter-grey);
 }
 
 .nav__links a.active {
