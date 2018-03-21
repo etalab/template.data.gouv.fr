@@ -4,7 +4,6 @@
   /* Center images smaller than width */
   margin: auto;
   display: block;
-
 }
 
 /* Allow images legends with the following syntax:
@@ -17,7 +16,7 @@
 }
 
 /* Disable lists default indentation */
-.markdown ol, 
+.markdown ol,
 .markdown ul {
   margin: 0;
   padding: 0 0 0 1em;
