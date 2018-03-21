@@ -16,6 +16,10 @@
     flex-direction: column;
   }
 
+  .row .column:not(:last-child) {
+    margin-bottom: 2em;
+  }
+
   .row p + p {
     margin-top: 1em;
   }
