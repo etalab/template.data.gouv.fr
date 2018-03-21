@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.panel+.panel {
+.panel + .panel {
   margin-top: 2em;
 }
 
