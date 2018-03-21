@@ -1,6 +1,7 @@
 .markdown img {
   /* Prevent larger images to break layout */
   max-width: 100%;
+
   /* Center images smaller than width */
   margin: auto;
   display: block;
