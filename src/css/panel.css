@@ -10,7 +10,7 @@
   margin-top: 0;
 }
 
-.panel__header:after {
+.panel__header::after {
   content: '';
   display: block;
   width: calc(100% + 4em);

@@ -4,6 +4,7 @@ form {
 }
 
 input,
+textarea,
 select {
   width: 100%;
   outline: none;

@@ -19,6 +19,5 @@
 @import "markdown.css";
 @import "documentation.css";
 @import "article.css";
-
 /* template-specific style */
 @import "template.css";
