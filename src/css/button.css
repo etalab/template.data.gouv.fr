@@ -14,7 +14,8 @@ button.button:visited {
   border-radius: var(--theme-border-radius);
   border: 1px solid transparent;
   border-bottom: 2px solid var(--theme-primary-dark);
-  font-family: "Evolventa", "Trebuchet MS", sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: bold;
   font-size: 1.2em;
   position: relative;
   overflow: hidden;
