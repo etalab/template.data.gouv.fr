@@ -21,6 +21,7 @@ select {
 }
 
 input:focus,
+textarea:focus,
 select:focus {
   border-color: var(--theme-primary);
   transition: border-color 0.2s ease-out;
