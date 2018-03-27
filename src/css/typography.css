@@ -49,3 +49,9 @@ p {
 .text-right {
   text-align: right;
 }
+
+.text-quote {
+  background-color: var(--theme-background-grey);
+  border-left: 8px solid var(--theme-border-lighter);
+  padding: 4px 0 4px 25px;
+}
