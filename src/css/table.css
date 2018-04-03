@@ -1,0 +1,28 @@
+table {
+  background: var(--theme-background-white);
+  border: var(--light-grey);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px var(--theme-box-shadow);
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 1em;
+  text-align: left;
+}
+
+td {
+  border-top: 1px solid var(--theme-border);
+}
+
+thead th {
+  background: var(--lighter-grey);
+  font-size: 1.1em;
+}
+
+tr:hover {
+  background: var(--lighter-grey);
+}
