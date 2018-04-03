@@ -1,0 +1,49 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  min-height: calc(100vh - 73px);
+}
+
+.dashboard .side-menu {
+  flex: 1 1 auto;
+  background: var(--white);
+}
+
+.dashboard .side-menu ul {
+  margin-top: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dashboard .side-menu a {
+  padding: 1em 2em;
+  display: block;
+  width: 100%;
+  color: var(--dark-grey);
+  box-sizing: border-box;
+}
+
+.dashboard .side-menu a.active {
+  background: linear-gradient(to right, var(--theme-primary), var(--theme-primary) 5px, var(--lighter-grey) 5px, var(--lighter-grey));
+  color: var(--darker-grey);
+}
+
+.dashboard .side-menu a:hover {
+  color: var(--theme-primary);
+}
+
+.dashboard .main {
+  padding: 2em;
+  flex: 1 1 75%;
+  background: var(--lighter-grey);
+  box-sizing: border-box;
+}
+
+.dashboard .main > :first-child {
+  margin-top: 0;
+}
+
+.dashboard table {
+  box-shadow: none;
+}

@@ -1,7 +1,12 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
 body {
   padding: 0;
   margin: 0;
-  position: relative;
   overflow: auto;
   background: var(--theme-background-grey);
 }
