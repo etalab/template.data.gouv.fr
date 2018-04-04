@@ -137,3 +137,7 @@
     grid-template-columns: 1fr;
   }
 }
+
+.dashboard {
+  border-top: 1px solid var(--theme-border);
+}

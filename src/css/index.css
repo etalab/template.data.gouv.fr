@@ -3,6 +3,7 @@
 @import "typography.css";
 @import "icons.css";
 @import "main.css";
+@import "table.css";
 @import "code.css";
 @import "button.css";
 @import "container.css";
@@ -18,6 +19,7 @@
 @import "form.css";
 @import "markdown.css";
 @import "documentation.css";
+@import "dashboard.css";
 @import "article.css";
 
 /* template-specific style */

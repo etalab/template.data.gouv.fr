@@ -6,12 +6,16 @@
   position: relative;
 }
 
-.panel + .panel {
+.panel + * {
   margin-top: 2em;
 }
 
-.panel h1:first-of-type {
+.panel > :first-child {
   margin-top: 0;
+}
+
+.panel > :last-child {
+  margin-bottom: 0;
 }
 
 .panel__header::after {
