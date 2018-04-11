@@ -12,14 +12,13 @@ button.button:visited {
   color: #fff;
   background-color: var(--theme-secondary);
   border-radius: var(--theme-border-radius);
-  border: 1px solid transparent;
-  border-bottom: 2px solid var(--theme-primary-dark);
+  border: 0;
+  box-shadow: 0 2px var(--theme-primary-dark);
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   position: relative;
+  top: 0;
   overflow: hidden;
-  transition: box-shadow 0.25s;
 }
 
 a.button:hover,
@@ -31,7 +30,7 @@ a.button:active,
 button.button:active {
   transform: translateY(2px);
   border-bottom: 0;
-  margin-bottom: 2px;
+  box-shadow: none;
 }
 
 button::-moz-focus-inner {
