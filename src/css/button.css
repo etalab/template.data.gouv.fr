@@ -5,9 +5,13 @@ a.button:visited,
 button.button,
 button.button:focus,
 button.button:active,
-button.button:visited {
+button.button:visited,
+input[type="button"],
+input[type="button"]:focus,
+input[type="button"]:active,
+input[type="button"]:visited {
+  width: auto;
   display: inline-block;
-  margin: 0 auto;
   padding: 0.5em 2em;
   color: #fff;
   background-color: var(--theme-secondary);
@@ -22,12 +26,14 @@ button.button:visited {
 }
 
 a.button:hover,
-button.button:hover {
+button.button:hover,
+input[type="button"]:hover {
   background: var(--theme-secondary-darken);
 }
 
 a.button:active,
-button.button:active {
+button.button:active,
+input[type="button"]:hover {
   transform: translateY(2px);
   border-bottom: 0;
   box-shadow: none;
@@ -35,4 +41,41 @@ button.button:active {
 
 button::-moz-focus-inner {
   border: 0;
+}
+
+a.button.small,
+button.button.small,
+input[type="button"].small {
+  font-size: 0.825em;
+  padding: 0.25em 1em;
+}
+
+a.button.large,
+button.button.large,
+input[type="button"].large {
+  font-size: 1.25em;
+}
+
+.button.warning {
+  background-color: var(--red);
+  box-shadow: 0 2px var(--dark-red);
+}
+
+.button.warning:hover,
+.button.warning:active {
+  background-color: var(--dark-red);
+}
+
+.button.secondary {
+  background-color: var(--grey);
+  box-shadow: 0 2px var(--dark-grey);
+}
+
+.button.secondary:hover,
+.button.secondary:active {
+  background-color: var(--dark-grey);
+}
+
+.button + .button {
+  margin-left: 1em;
 }
