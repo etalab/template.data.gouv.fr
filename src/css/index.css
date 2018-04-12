@@ -21,6 +21,7 @@
 @import "documentation.css";
 @import "dashboard.css";
 @import "article.css";
+@import "cards.css";
 
 /* template-specific style */
 @import "template.css";

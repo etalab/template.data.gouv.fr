@@ -11,6 +11,10 @@
   max-width: 50em;
 }
 
+.row .column + .column {
+  margin-left: 2em;
+}
+
 @media (--smaller-than-tablet) {
   .row {
     flex-direction: column;
