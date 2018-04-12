@@ -1,0 +1,54 @@
+.card {
+  background: var(--theme-background-white);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px var(--theme-box-shadow);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.card + .card {
+  margin-left: 2em;
+}
+
+@media (--smaller-than-tablet) {
+  .card + .card {
+    margin-left: 0;
+    margin-top: 2em;
+  }
+}
+
+.card__cover {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__cover img {
+  object-fit: cover; /* will not work on IE and Edge < 16 */
+  height: 100%;
+  width: 100%;
+}
+
+.card__content {
+  padding: 2em;
+}
+
+.card__content h3 {
+  margin: 0;
+}
+
+.card__content .card__meta {
+  color: var(--dark-grey);
+}
+
+.card__content .card__meta time::after {
+  content: " • ";
+}
+
+.card__content :last-child {
+  margin-bottom: 0;
+}
