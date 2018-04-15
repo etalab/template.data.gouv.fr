@@ -1,0 +1,43 @@
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 10;
+}
+
+/* no js modal */
+.modal__backdrop:target {
+  display: flex;
+}
+
+.modal {
+  border-radius: var(--theme-border-radius);
+  box-shadow: var(--theme-box-shadow);
+  background: var(--white);
+  padding: 2em;
+  max-width: 32em;
+}
+
+.modal > :first-child {
+  margin-top: 0;
+}
+
+.modal .button__group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.modal .button__group .button {
+  margin: 0;
+}
+
+.modal .button__group .button + .button {
+  margin-left: 1em;
+}
