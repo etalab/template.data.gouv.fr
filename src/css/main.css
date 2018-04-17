@@ -47,3 +47,7 @@ small {
 .tag a {
   color: var(--white);
 }
+
+.modals .button {
+  margin: auto;
+}

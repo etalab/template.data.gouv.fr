@@ -148,7 +148,6 @@ label.label-inline {
 .form__group {
   position: relative;
   display: block;
-  margin-bottom: 1em;
 }
 
 .form__group + .form__group {
