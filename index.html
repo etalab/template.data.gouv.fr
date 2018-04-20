@@ -172,6 +172,7 @@
       <div class="typography__sample"><h3>Heading 3</h3><div class="typography__caption">Evolventa, 20px</div></div>
       <div class="typography__sample"><h4>Heading 4</h4><div class="typography__caption">Evolventa, 16px</div></div>
       <div class="typography__sample"><a>Lien</a><div class="typography__caption">Source Sans Pro, 16px</div></div>
+      <div class="typography__sample"><div class="text-quote"><p>The last Metroid is in captivity. The galaxy is at peace…</p></div></div>
     </div>
   </section>
 
@@ -402,8 +403,30 @@
         </div>
 
         <button class="button" type="submit" name="subscribe" id="submit">Valider</button>
-
       </form>
+    </div>
+  </section>
+
+  <section class="section-grey">
+    <div class="container">
+      <div class="panel">
+        <h1>Buttons</h1>
+        <div class="form__group">
+          <button class="button large">Valider</button>
+          <button class="button large warning">Annuler</button>
+          <button class="button large secondary">¯\_(ツ)_/¯</button>
+        </div>
+        <div class="form__group">
+          <button class="button">Valider</button>
+          <button class="button warning">Annuler</button>
+          <button class="button secondary">¯\_(ツ)_/¯</button>
+        </div>
+        <div class="form__group">
+          <button class="button small">Valider</button>
+          <button class="button small warning">Annuler</button>
+          <button class="button small secondary">¯\_(ツ)_/¯</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -502,8 +525,16 @@
     </div>
   </section>
 
-  <section class="section-grey">
-    <div class="container">
+  <div id="dashboard" class="dashboard">
+    <aside class="side-menu">
+      <ul>
+        <li><a>Rôles</a></li>
+        <li><a class="active">Utilisateurs</a></li>
+        <li><a>Articles</a></li>
+        <li><a>Paramètres</a></li>
+      </ul>
+    </aside>
+    <div class="main">
       <div class="panel">
         <div class="panel__header">
           <h3>Token panel for API administration</h3>
@@ -525,6 +556,96 @@
               <svg class="icon icon-copy" viewBox="0 0 32 32"><use xlink:href="#icon-copy"></use></svg>
             </button>
           </div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Pouet</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="panel">
+        <h3>Dota 2 hero classification</h3>
+        <table>
+          <thead>
+            <th>Force</th>
+            <th>Agility</th>
+            <th>Intelligence</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sand King</td>
+              <td>Anti-Mage</td>
+              <td>Lina</td>
+            </tr>
+            <tr>
+              <td>Earthshaker</td>
+              <td>Phantom Assassin</td>
+              <td>Crystal Maiden</td>
+            </tr>
+            <tr>
+              <td>Io</td>
+              <td>Venomancer</td>
+              <td>Witch Doctor</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-grey cards">
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <div class="card__cover">
+            <img src="images/shiba.jpg" />
+          </div>
+          <div class="card__content">
+            <h3>Shiba Inu</h3>
+            <div class="card__meta"><time>12 avril 2018</time><span>Juna</span></div>
+            <p>The Shiba Inu (柴犬) is the smallest of the six original and distinct spitz breeds of dog from Japan.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__cover">
+            <img src="images/french.jpg" />
+          </div>
+          <div class="card__content">
+            <h3>French Bulldog</h3>
+            <div class="card__meta"><time>12 avril 2018</time><span>Tama</span></div>
+            <p>The French Bulldog, also known as the Frenchie, is a small breed of domestic dog. Frenchies were the result in the 1800s of a cross between bulldog ancestors imported from England and local ratters in Paris (France).
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__cover">
+            <img src="images/corgi.jpg" />
+          </div>
+          <div class="card__content">
+            <h3>Corgi</h3>
+            <div class="card__meta"><time>12 avril 2018</time><span>Nova</span></div>
+            <p>The Welsh Corgi, sometimes known as just a Corgi (/ˈkɔːrɡi/, Welsh for "dwarf dog"; plural "corgis" or occasionally the etymologically consistent "corgwn" (/ˈkɔːrɡuːn/)), is a small type of herding dog that originated in Wales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modals" id="modal-section">
+    <div class="container">
+      <h1>Modal</h1>
+      <p>Cet exemple fonctionne sans javascript mais libre à vous d’adapter le code à vos besoins.</p>
+      <a class="button" href="#modal">Click me!</a>
+    </div>
+    <div class="modal__backdrop" id="modal">
+      <div class="modal">
+        <h2>Hello</h2>
+        <p>Yes. This is dog.</p>
+        <div class="form__group button__group">
+          <a class="button" href="#modal-section">Valider</a>
+          <a class="button secondary" href="#modal-section">Annuler</a>
         </div>
       </div>
     </div>
