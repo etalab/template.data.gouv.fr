@@ -1,8 +1,7 @@
 .hero {
   width: 100%;
   color: #fff;
-  background: #45adc5;
-  background: linear-gradient(to right, #c969a6 0%, #e795a8 15%, #a4cfcd 43%, #45adc5 65%, #265c9f 100%);
+  background: var(--theme-primary);
 }
 
 .hero__container {
