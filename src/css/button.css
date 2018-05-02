@@ -10,7 +10,6 @@ input[type="button"],
 input[type="button"]:focus,
 input[type="button"]:active,
 input[type="button"]:visited {
-  width: auto;
   display: inline-block;
   padding: 0.5em 2em;
   color: #fff;
