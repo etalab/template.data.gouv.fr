@@ -25,7 +25,7 @@
     "prepublish-css": "postcss --output dist/style/main.css src/css/index.css && NODE_ENV=production postcss --output dist/style/main.min.css src/css/index.css",
     "prepublish": "rm -rf dist && yarn prepublish-css && copyfiles images/* images/icons/* images/favicons/* fonts/**/* dist"
   },
-  "files": ["dist", "src/css"],
+  "files": ["dist"],
   "style": "dist/style/main.min.css",
   "main": "dist/style/main.css",
   "repository": {
@@ -34,5 +34,6 @@
   },
   "bugs": {
     "url": "https://github.com/etalab/template.data.gouv.fr/issues"
-  }
+  },
+  "keywords": ["template.data.gouv.fr", "etalab", "beta.gouv.fr", "ui kit"]
 }

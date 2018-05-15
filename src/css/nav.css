@@ -37,7 +37,7 @@
 
 .nav__item {
   padding: 0;
-  display: inline;
+  display: inline-block;
 }
 
 .nav__item a,
@@ -64,5 +64,9 @@
 @media (--smaller-than-phablet) {
   .nav__links {
     padding-top: 0;
+  }
+
+  .nav__item {
+    margin-top: 1em;
   }
 }

@@ -52,3 +52,9 @@
 .footer__logo img {
   width: 100%;
 }
+
+@media (--smaller-than-desktop) {
+    .footer .container {
+        flex-direction: column;
+    }
+}
