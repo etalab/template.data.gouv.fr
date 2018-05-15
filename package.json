@@ -16,12 +16,23 @@
   },
   "scripts": {
     "deploy": "yarn dist && gh-pages -d dist",
-    "dev": "postcss --output main.css --watch src/css/index.css",
+    "dev": "postcss --output dist/template.css --watch src/css/template.css",
     "lint": "stylelint --fix src/css/*.css",
     "test": "stylelint src/css/*.css",
-    "prepublish": "NODE_ENV=production postcss --output template.css src/css/index.css",
-    "dist": "yarn dist-css && yarn dist-site",
-    "dist-css": "NODE_ENV=production postcss --output dist/main.css src/css/index.css",
-    "dist-site": "copyfiles images/* images/**/* fonts/**/* index.html dist"
+    "dist": "rm -rf dist && yarn dist-css && yarn dist-site",
+    "dist-site": "copyfiles images/* images/**/* fonts/**/* index.html dist",
+    "dist-css": "postcss --output dist/template.css src/css/template.css",
+    "prepublish-css": "postcss --output dist/style/main.css src/css/index.css && NODE_ENV=production postcss --output dist/style/main.min.css src/css/index.css",
+    "prepublish": "rm -rf dist && yarn prepublish-css && copyfiles images/* images/icons/* images/favicons/* fonts/**/* dist"
+  },
+  "files": ["dist", "src/css"],
+  "style": "dist/style/main.min.css",
+  "main": "dist/style/main.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etalab/template.data.gouv.fr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/etalab/template.data.gouv.fr/issues"
   }
 }

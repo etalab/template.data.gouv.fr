@@ -8,7 +8,7 @@
 
   <title>Tagline libérer les données sans effort et sur data.gouv.fr - template.data.gouv.fr</title>
 
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="dist/template.css">
 
   <!-- Search Engine -->
   <meta name="description" content="Tagline libérer les données sans effort et sur data.gouv.fr">
@@ -92,29 +92,31 @@
     </defs>
   </svg>
 
-  <nav class="nav">
-    <div class="nav__container">
-      <a class="nav__link" href="index.html">
-        <img class="nav__logo" src="images/logo_site.svg" alt="Accueil de template.data.gouv.fr" />
+  <header class="navbar">
+    <div class="navbar__container">
+      <a class="navbar__home" href="index.html">
+        <img class="navbar__logo" src="images/logo_site.svg" alt="Accueil de template.data.gouv.fr" />
       </a>
 
-      <ul class="nav__links">
-        <li><a href="#typography">Typographie</a></li>
-        <li><a href="#colors">Couleurs</a></li>
-        <li><a href="#form">Form</a></li>
-        <li><a href="#documentation">Documentation</a></li>
-        <li>
-          <div class="dropdown">
-            Langage
-            <div class="dropdown-content">
-              <a href="#">Français 🇫🇷</a>
-              <a href="#">Anglais 🇬🇧</a>
+      <nav>
+        <ul class="nav__links">
+          <li class="nav__item"><a href="#typography">Typographie</a></li>
+          <li class="nav__item"><a href="#colors">Couleurs</a></li>
+          <li class="nav__item"><a href="#form">Form</a></li>
+          <li class="nav__item"><a href="#documentation">Documentation</a></li>
+          <li class="nav__item">
+            <div class="dropdown">
+              Langage
+              <div class="dropdown-content">
+                <a href="#">Français 🇫🇷</a>
+                <a href="#">Anglais 🇬🇧</a>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <div class="hero">
     <div class="hero__container">
@@ -600,7 +602,7 @@
       <div class="row">
         <div class="card">
           <div class="card__cover">
-            <img src="images/shiba.jpg" />
+            <img src="images/template/shiba.jpg" />
           </div>
           <div class="card__content">
             <h3>Shiba Inu</h3>
@@ -610,7 +612,7 @@
         </div>
         <div class="card">
           <div class="card__cover">
-            <img src="images/french.jpg" />
+            <img src="images/template/french.jpg" />
           </div>
           <div class="card__content">
             <h3>French Bulldog</h3>
@@ -621,7 +623,7 @@
         </div>
         <div class="card">
           <div class="card__cover">
-            <img src="images/corgi.jpg" />
+            <img src="images/template/corgi.jpg" />
           </div>
           <div class="card__content">
             <h3>Corgi</h3>
