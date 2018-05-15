@@ -19,7 +19,7 @@
   background-color: white;
 }
 
-.hero__white-background h1 {
+h1.hero__white-background  {
   color: var(--theme-dark-text);
   margin: 0;
 }
