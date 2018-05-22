@@ -20,4 +20,4 @@ Commenter les parties qui ne vous sont pas utiles dans `src/css/index.css` puis 
 
 ## Utiliser la dernière version complète
 
-En utilisant rawgit `<link href="https://rawgit.com/etalab/template.data.gouv.fr/master/template.css" rel="stylesheet">`
+En utilisant rawgit `<link href="https://cdn.rawgit.com/etalab/template.data.gouv.fr/master/src/main.css" rel="stylesheet">`
