@@ -31,7 +31,6 @@
   margin-bottom: 0;
   text-align: center;
   border: 0;
-  box-sizing: border-box;
 }
 
 .notification.full-width.closable .close {
