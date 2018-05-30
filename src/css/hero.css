@@ -10,7 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   padding: 2em;
 }
 
@@ -19,7 +18,7 @@
   background-color: white;
 }
 
-h1.hero__white-background  {
+h1.hero__white-background {
   color: var(--theme-dark-text);
   margin: 0;
 }

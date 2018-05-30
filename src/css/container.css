@@ -4,11 +4,14 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .container h1:first-of-type {
   margin-top: 0;
+}
+
+.article__container {
+  max-width: 35em;
 }
 
 @media (--larger-than-mobile) {

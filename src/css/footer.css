@@ -54,7 +54,7 @@
 }
 
 @media (--smaller-than-desktop) {
-    .footer .container {
-        flex-direction: column;
-    }
+  .footer .container {
+    flex-direction: column;
+  }
 }

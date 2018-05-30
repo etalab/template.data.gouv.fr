@@ -13,7 +13,6 @@ select {
   line-height: 1.6;
   color: var(--black);
   border-radius: var(--theme-border-radius);
-  box-sizing: border-box;
   border: 1px solid var(--theme-border);
   background: var(--theme-background-white);
   vertical-align: middle;

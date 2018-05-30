@@ -1,6 +1,6 @@
 .navbar {
   border-bottom: 1px solid var(--theme-box-shadow);
-  box-shadow: 0 1px 4px var(--theme-box-shadow);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   width: 100%;
   background: #fff;
   z-index: 100;
@@ -28,11 +28,10 @@
 }
 
 .nav__links {
-  display: inline;
+  display: inline-block;
   margin: 0;
-  padding: 1em 0;
+  padding: 0;
   list-style-type: none;
-  text-align: right;
 }
 
 .nav__item {
@@ -61,12 +60,13 @@
   color: var(--white);
 }
 
-@media (--smaller-than-phablet) {
-  .nav__links {
-    padding-top: 0;
+@media (--smaller-than-tablet) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .nav__item {
-    margin-top: 1em;
+  .nav__links {
+    padding-top: 1em;
   }
 }

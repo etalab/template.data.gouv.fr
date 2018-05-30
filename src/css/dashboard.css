@@ -21,7 +21,6 @@
   display: block;
   width: 100%;
   color: var(--dark-grey);
-  box-sizing: border-box;
 }
 
 .dashboard .side-menu a.active {
@@ -37,7 +36,6 @@
   padding: 2em;
   flex: 1 1 75%;
   background: var(--lighter-grey);
-  box-sizing: border-box;
 }
 
 .dashboard .main > :first-child {

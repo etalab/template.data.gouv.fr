@@ -1,4 +1,4 @@
-.markdown img {
+.richtext img {
   /* Prevent larger images to break layout */
   max-width: 100%;
 
@@ -10,31 +10,31 @@
 /* Allow images legends with the following syntax:
   ![](path_to_image)
   *image_caption* */
-.markdown img + em {
+.richtext img + em {
   display: block;
   text-align: center;
   margin: 0.3em 0.1em;
 }
 
 /* Disable lists default indentation */
-.markdown ol,
-.markdown ul {
+.richtext ol,
+.richtext ul {
   margin: 0;
   padding: 0 0 0 1em;
 }
 
-.markdown li {
+.richtext li {
   padding-left: 0.5em;
 }
 
 /* Lighter inline code element */
-code {
+.richtext code {
   padding: 0 0.1em;
   border-radius: 0.2em;
 }
 
 /* But <pre> block should be spaced */
-pre {
+.richtext pre {
   padding: 0.5em;
   margin: 0.5em 0;
   border-radius: 0.5em;
