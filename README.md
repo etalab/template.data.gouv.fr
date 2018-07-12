@@ -32,4 +32,4 @@ Puis importer le fichier
 
 ## Utiliser la dernière version complète
 
-En utilisant unpkg `<link href="https://unpkg.com/template.data.gouv.fr@1.0.2/dist/style/main.css" rel="stylesheet">`
+En utilisant unpkg `<link href="https://unpkg.com/template.data.gouv.fr/dist/style/main.css" rel="stylesheet">`
