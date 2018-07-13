@@ -32,12 +32,13 @@
   vertical-align: middle;
 }
 
-.color-panel__name {
+.color-panel__description {
   padding: 0.5em 0;
   vertical-align: middle;
 }
 
-.color-panel__name h4 {
+.color-panel__name {
+  font-family: 'Evolventa';
   margin: 0;
 }
 

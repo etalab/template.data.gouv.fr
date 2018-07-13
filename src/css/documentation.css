@@ -54,7 +54,7 @@
 
 .side-pane li.unfolded.side-pane__dropdown .side-pane__link,
 .side-pane li.unfolded.side-pane__dropdown:hover .side-pane__link {
-  background-image: url("../images/icons/arrow-down.svg");
+  background-image: url("../images/icons/arrow-down-white.svg");
   background-color: transparent;
 }
 

@@ -22,9 +22,8 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--theme-primary);
+  border-color: var(--theme-border-active);
   transition: border-color 0.2s ease-out;
-  box-shadow: 0 0 1px 1px var(--lighter-blue);
 }
 
 input:disabled,

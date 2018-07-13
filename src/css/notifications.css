@@ -1,5 +1,4 @@
 .notification {
-  color: var(--theme-info-border);
   background: var(--theme-info-bg);
   border: 1px solid var(--theme-info-border);
   border-radius: var(--theme-border-radius);
@@ -38,19 +37,16 @@
 }
 
 .notification.success {
-  color: var(--theme-success-border);
   background: var(--theme-success-bg);
   border-color: var(--theme-success-border);
 }
 
 .notification.warning {
-  color: var(--theme-warning-border);
   background: var(--theme-warning-bg);
   border-color: var(--theme-warning-border);
 }
 
 .notification.error {
-  color: var(--theme-error-border);
   background: var(--theme-error-bg);
   border-color: var(--theme-error-border);
 }
