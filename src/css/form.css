@@ -92,7 +92,7 @@ input[type="checkbox"]::before {
   left: 3px;
   height: 14px;
   width: 14px;
-  background: url("../images/icons/tick.svg") center center no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path d="M14.23 1.304L6.112 9.501 2.767 6.117a1.029 1.029 0 0 0-1.464 0 1.054 1.054 0 0 0 0 1.479l4.055 4.101c.208.21.481.31.754.305.272.005.545-.095.753-.305l8.829-8.915a1.053 1.053 0 0 0 0-1.478 1.027 1.027 0 0 0-1.464 0z" fill="white" /></svg>') center center no-repeat;
 }
 
 input[type="checkbox"]:checked::before {
@@ -104,8 +104,8 @@ input[type="checkbox"]:checked::before {
 
 select {
   appearance: none;
-  background: var(--theme-background-white) url("../images/icons/arrow-down.svg") no-repeat;
-  background-position: center right 1em;
+  background: var(--theme-background-white) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path d="M1.254 2.518a.904.904 0 0 1 0-1.257.85.85 0 0 1 1.225 0l4.512 4.632 4.511-4.632a.85.85 0 0 1 1.225 0 .904.904 0 0 1 0 1.257L7.621 7.761a.848.848 0 0 1-.63.259.849.849 0 0 1-.631-.259L1.254 2.518z" fill="gray"/></svg>') no-repeat;
+  background-position: top 1em right 1em;
   background-size: 15px;
   padding-right: 45px;
   border-radius: var(--theme-border-radius);
@@ -161,8 +161,8 @@ fieldset {
 
 .overlay-button {
   position: absolute;
-  right: 21px;
-  top: 12px;
+  right: 2em;
+  top: 1.25em;
   background: 0;
   border: 0;
   width: 15px;
