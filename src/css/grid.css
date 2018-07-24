@@ -1,17 +1,26 @@
-.row {
+.row,
+.column {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  width: 100%;
+  margin-left: -1em;
+  margin-right: -1em;
 }
 
-.row .column {
+.row {
+  flex-direction: row;
+}
+
+.row > * {
   max-width: 50em;
 }
 
-.row .column + .column {
-  margin-left: 2em;
+.column {
+  flex-direction: column;
+}
+
+.row > * {
+  margin: 0 1em;
 }
 
 @media (--smaller-than-tablet) {
@@ -19,12 +28,8 @@
     flex-direction: column;
   }
 
-  .row .column:not(:last-child) {
-    margin-bottom: 2em;
-  }
-
-  .row p + p {
-    margin-top: 1em;
+  .row > * {
+    margin: 1em;
   }
 }
 
