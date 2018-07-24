@@ -4,9 +4,14 @@
 
 .side-pane {
   background: var(--theme-background-grey);
-  padding: 2em;
+  padding: 1.5em;
   flex: 0 0 25%;
   border-right: 1px solid var(--theme-border-lighter);
+}
+
+.side-pane h2 {
+  margin-top: 0;
+  padding: 0.5em;
 }
 
 .side-pane .side-pane__menu {
@@ -20,6 +25,15 @@
 
 .side-pane__title {
   padding: 0 1em;
+}
+
+.side-pane__title h3 {
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--theme-border);
 }
 
 .side-pane .side-pane__link {
@@ -119,6 +133,11 @@
     border-right: none;
     border-bottom: 1px solid var(--theme-border-lighter);
     flex: auto;
+  }
+
+  .side-pane .side-pane__menu {
+    max-width: unset;
+    float: none;
   }
 }
 
