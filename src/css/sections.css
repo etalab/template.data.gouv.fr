@@ -1,12 +1,10 @@
 section {
   padding: 5em 0;
   background-color: var(--theme-background-white);
-  color: var(--black);
 }
 
 .section-grey {
   background-color: var(--theme-background-grey);
-  color: var(--black);
 }
 
 .section-dark {

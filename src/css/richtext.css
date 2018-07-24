@@ -35,8 +35,8 @@
 
 /* But <pre> block should be spaced */
 .richtext pre {
-  padding: 0.5em;
+  padding: 1em;
   margin: 0.5em 0;
-  border-radius: 0.5em;
+  border-radius: var(--theme-border-radius);
   background-color: #ebeff3;
 }
