@@ -5,7 +5,7 @@
   -moz-font-feature-settings: "liga" on;
   padding: 0;
   background: var(--white);
-  color: var(--black);
+  color: var(--theme-dark-text);
   line-height: 1.5;
   margin: 0 auto;
 }
@@ -82,7 +82,7 @@
 }
 
 .article__author-role {
-  color: var(--dark-grey);
+  color: var(--darker-grey);
   font-size: 0.9em;
   line-height: 0.8em;
 }

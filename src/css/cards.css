@@ -42,7 +42,7 @@
 }
 
 .card__content .card__meta {
-  color: var(--dark-grey);
+  color: var(--darker-grey);
 }
 
 .card__content .card__meta time::after {

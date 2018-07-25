@@ -9,6 +9,7 @@ body {
 }
 
 body {
+  color: var(--theme-dark-text);
   padding: 0;
   margin: 0;
   overflow: auto;

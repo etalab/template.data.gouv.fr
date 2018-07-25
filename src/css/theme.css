@@ -1,7 +1,7 @@
 :root {
-  --blue: #0081d5;
-  --light-blue: #1e90da;
-  --dark-blue: #006cb0;
+  --blue: #0053B3;
+  --light-blue: #006be6;
+  --dark-blue: #003b80;
   --lighter-blue: #b4e1fa;
   --white: #fff;
   --lightest-grey: #fafbfc;
@@ -16,9 +16,10 @@
   --light-green: #daf5e7;
   --orange: #ff9947;
   --light-orange: #fff0e4;
-  --red: #d1335b;
-  --dark-red: #a13030;
-  --light-red: #f8e1e7;
+  --red: #d63626;
+  --dark-red: #ab2b1e;
+  --light-red: #efaca6;
+
   --theme-primary: var(--blue);
   --theme-primary-light: var(--light-blue);
   --theme-primary-dark: var(--dark-blue);
@@ -33,7 +34,8 @@
   --theme-background-color: var(--blue);
   --theme-background-dark: var(--black);
   --theme-box-shadow: var(--light-grey);
-  --theme-label-text: var(--dark-grey);
+  --theme-label-text: var(--darker-grey);
+  --theme-light-text: var(--white);
   --theme-dark-text: var(--almost-black);
   --theme-success-border: var(--green);
   --theme-success-bg: var(--light-green);
@@ -41,6 +43,6 @@
   --theme-warning-bg: var(--light-orange);
   --theme-error-border: var(--red);
   --theme-error-bg: var(--light-red);
-  --theme-info-border: var(--blue);
+  --theme-info-border: var(--light-blue);
   --theme-info-bg: var(--lighter-blue);
 }
