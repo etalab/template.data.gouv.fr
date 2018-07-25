@@ -18,6 +18,11 @@
 
 @font-face {
   font-family: "Evolventa";
+  src: url("../fonts/Evolventa/Evolventa-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Evolventa";
   src: url("../fonts/Evolventa/Evolventa-Bold.ttf");
   font-weight: 800;
 }
