@@ -92,11 +92,13 @@
   list-style-type: none;
   color: var(--darker-grey);
   border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .side-pane__submenu li {
   list-style-type: none;
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 .side-pane__submenu .side-pane__sublink:hover {

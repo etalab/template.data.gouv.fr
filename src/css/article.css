@@ -115,6 +115,7 @@
 
 a.article__link {
   color: var(--theme-dark-text);
+  text-decoration: none;
 }
 
 a.article__link:hover {
