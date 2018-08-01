@@ -1,5 +1,8 @@
 section {
   padding: 5em 0;
+}
+
+.section-white {
   background-color: var(--theme-background-white);
 }
 
