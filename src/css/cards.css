@@ -52,3 +52,8 @@
 .card__content :last-child {
   margin-bottom: 0;
 }
+
+.card__extra {
+  border-top: 1px solid var(--theme-border);
+  padding: 1em;
+}
