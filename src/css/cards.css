@@ -7,14 +7,15 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  width: 100%;
 }
 
-.card + .card {
+.row > .card + .card {
   margin-left: 2em;
 }
 
 @media (--smaller-than-tablet) {
-  .card + .card {
+  .row > .card + .card {
     margin-left: 0;
     margin-top: 2em;
   }
@@ -35,6 +36,7 @@
 
 .card__content {
   padding: 2em;
+  flex-grow: 1;
 }
 
 .card__content h3 {
