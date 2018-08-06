@@ -42,6 +42,7 @@
 
 .footer__links a {
   color: var(--white);
+  text-decoration: none;
 }
 
 .footer__logo {
