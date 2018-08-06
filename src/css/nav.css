@@ -67,6 +67,7 @@ a.navbar__home {
   align-items: center;
   color: var(--almost-black);
   letter-spacing: 0.05em;
+  text-decoration: none;
 }
 
 .navbar__home img {
