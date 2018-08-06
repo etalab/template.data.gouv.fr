@@ -1,5 +1,6 @@
 :root {
-  --blue: #0053B3;
+  /* Colors */
+  --blue: #0053b3;
   --light-blue: #006be6;
   --dark-blue: #003b80;
   --lighter-blue: #b4e1fa;
@@ -20,6 +21,7 @@
   --dark-red: #ab2b1e;
   --light-red: #efaca6;
 
+  /* Theme */
   --theme-primary: var(--blue);
   --theme-primary-light: var(--light-blue);
   --theme-primary-dark: var(--dark-blue);
