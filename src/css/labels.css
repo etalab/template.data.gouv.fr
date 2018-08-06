@@ -1,0 +1,24 @@
+.label-list {
+  padding: 0;
+  margin: 0;
+}
+
+.label {
+  background-color: var(--lighter-grey);
+  border-radius: var(--theme-border-radius);
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  margin: 0.25em;
+  font-size: 0.875em;
+}
+
+.label--active {
+  background-color: var(--theme-primary);
+  color: var(--white);
+}
+
+.label--inactive {
+  background-color: var(--white);
+  border: 1px solid var(--theme-border);
+  color: var(--darker-grey);
+}
