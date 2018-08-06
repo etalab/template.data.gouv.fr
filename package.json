@@ -23,7 +23,7 @@
     "dist-site": "copyfiles CNAME images/* images/**/* fonts/**/* index.html dist",
     "dist-css": "postcss --output dist/template.css src/css/template.css",
     "prepublish-css": "postcss --output dist/style/main.css src/css/index.css && NODE_ENV=production postcss --output dist/style/main.min.css src/css/index.css",
-    "prepublish": "rm -rf dist && yarn prepublish-css && copyfiles images/* images/icons/* images/favicons/* fonts/**/* dist"
+    "prepublish": "rm -rf dist && yarn prepublish-css && copyfiles images/* images/icons/**/* images/favicons/* fonts/**/* dist"
   },
   "files": [
     "dist"
