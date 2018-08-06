@@ -55,20 +55,20 @@
 }
 
 .side-pane li.side-pane__dropdown .side-pane__link {
-  background: url("../images/icons/arrow-right.svg") no-repeat;
+  background: url("../images/icons/external/arrow-right.svg") no-repeat;
   background-position: center right 1em;
   background-size: 15px 15px;
 }
 
 .side-pane li.side-pane__dropdown:hover .side-pane__link {
-  background: var(--light-grey) url("../images/icons/arrow-right.svg") no-repeat;
+  background: var(--light-grey) url("../images/icons/external/arrow-right.svg") no-repeat;
   background-position: center right 1em;
   background-size: 15px 15px;
 }
 
 .side-pane li.unfolded.side-pane__dropdown .side-pane__link,
 .side-pane li.unfolded.side-pane__dropdown:hover .side-pane__link {
-  background-image: url("../images/icons/arrow-down-white.svg");
+  background-image: url("../images/icons/external/arrow-down-white.svg");
   background-color: transparent;
 }
 
