@@ -1,6 +1,8 @@
-# template.data.gouv.fr
+# template.data.gouv.fr [![CircleCI](https://circleci.com/gh/etalab/template.data.gouv.fr.svg?style=svg)](https://circleci.com/gh/etalab/template.data.gouv.fr)
 
 Template CSS pour data.gouv.fr et compagnie.
+
+
 
 ## Développement
 
@@ -24,7 +26,7 @@ Installer le package sur votre projet
 ```bash
   npm install template.data.gouv.fr
 ```
- 
+
 Puis importer le fichier
 ```
   import 'template.data.gouv.fr/dist/style/main.css'

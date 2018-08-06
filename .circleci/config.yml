@@ -4,7 +4,7 @@ defaults:
   workspace_root: &workspace_root
     ~/templatedatagouv
 
-  container: &default_container
+  nodejs_container: &nodejs_container
     working_directory: *workspace_root
     docker:
       - image: circleci/node:8
@@ -21,18 +21,27 @@ defaults:
         - v1-templatedatagouv-node-
 
 jobs:
-  install:
-    <<: *default_container
+  checkout:
+    <<: *nodejs_container
     steps:
       - checkout
+
+      - persist_to_workspace:
+          root: *workspace_root
+          paths:
+            - ./
+
+  install:
+    <<: *nodejs_container
+    steps:
+      - *attach_workspace
+      - *restore_node_modules
 
       - restore_cache:
           name: Restore yarn cache
           keys:
             - v1-templatedatagouv-yarn-{{ checksum "yarn.lock" }}
             - v1-templatedatagouv-yarn-
-
-      - *restore_node_modules
 
       - run:
           name: Install dependencies
@@ -50,17 +59,8 @@ jobs:
           paths:
             - node_modules/
 
-      - run:
-          name: Remove node_modules to cleanup workspace
-          command: rm -r node_modules/
-
-      - persist_to_workspace:
-          root: *workspace_root
-          paths:
-            - ./
-
   test:
-    <<: *default_container
+    <<: *nodejs_container
     steps:
       - *attach_workspace
       - *restore_node_modules
@@ -70,7 +70,7 @@ jobs:
           command: yarn test
 
   build:
-    <<: *default_container
+    <<: *nodejs_container
     steps:
       - *attach_workspace
       - *restore_node_modules
@@ -85,7 +85,7 @@ jobs:
             - dist/
 
   deploy:
-    <<: *default_container
+    <<: *nodejs_container
     steps:
       - *attach_workspace
       - *restore_node_modules
@@ -108,17 +108,18 @@ jobs:
 
       - deploy:
           name: Deploy to gh-pages branch on GitHub
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              yarn deploy
-            fi
+          command: yarn deploy
 
 workflows:
   version: 2
 
-  build_test_deploy:
+  push:
     jobs:
-      - install
+      - checkout
+
+      - install:
+          requires:
+            - checkout
 
       - test:
           requires:
@@ -126,8 +127,11 @@ workflows:
 
       - build:
           requires:
-            - test
+            - install
 
       - deploy:
           requires:
             - build
+          filters:
+            branches:
+              only: master
