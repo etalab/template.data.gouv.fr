@@ -15,7 +15,7 @@
     "stylelint-config-standard": "^17.0.0"
   },
   "scripts": {
-    "deploy": "yarn dist && gh-pages -d dist -m 'Deploy [skip ci]'",
+    "deploy": "gh-pages -d dist -m 'Deploy [skip ci]'",
     "dev": "postcss --output dist/template.css --watch src/css/template.css",
     "lint": "stylelint --fix src/css/*.css",
     "test": "stylelint src/css/*.css",
