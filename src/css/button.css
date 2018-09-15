@@ -6,6 +6,10 @@ button.button,
 button.button:focus,
 button.button:active,
 button.button:visited,
+input[type="submit"],
+input[type="submit"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:visited,
 input[type="button"],
 input[type="button"]:focus,
 input[type="button"]:active,
@@ -27,12 +31,14 @@ input[type="button"]:visited {
 
 a.button:hover,
 button.button:hover,
+input[type="submit"]:hover,
 input[type="button"]:hover {
   background: var(--theme-secondary-darken);
 }
 
 a.button:active,
 button.button:active,
+input[type="submit"]:hover,
 input[type="button"]:hover {
   transform: translateY(1px);
   border-bottom: 0;
@@ -45,6 +51,7 @@ button::-moz-focus-inner {
 
 a.button.small,
 button.button.small,
+input[type="submit"].small,
 input[type="button"].small {
   font-size: 0.825em;
   padding: 0.25em 1em;
@@ -52,6 +59,7 @@ input[type="button"].small {
 
 a.button.large,
 button.button.large,
+input[type="submit"].large,
 input[type="button"].large {
   font-size: 1.25em;
 }
