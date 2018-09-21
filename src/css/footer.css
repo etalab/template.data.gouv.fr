@@ -52,6 +52,7 @@
 
 .footer__logo img {
   width: 100%;
+  max-height: 60px;
 }
 
 @media (--smaller-than-desktop) {
