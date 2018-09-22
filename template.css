@@ -456,6 +456,7 @@ a.button.secondary {
 
 .footer__logo img {
   width: 100%;
+  max-height: 60px;
 }
 
 @media (max-width: 999px) {
@@ -710,6 +711,22 @@ span.navbar__domain {
 
 .column img {
   width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  margin-top: 1em;
+  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.grid .panel + .panel,
+.grid .card + .card {
+  margin: 0;
 }
 
 .panel {
@@ -1419,7 +1436,7 @@ fieldset {
   vertical-align: middle;
 }
 
-.article__preview .article__author-name {
+.article__preview img + .article__author-name {
   margin-left: 0.5em;
 }
 
