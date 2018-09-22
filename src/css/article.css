@@ -112,7 +112,7 @@
   vertical-align: middle;
 }
 
-.article__preview .article__author-name {
+.article__preview img + .article__author-name {
   margin-left: 0.5em;
 }
 
