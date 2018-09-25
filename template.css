@@ -155,7 +155,7 @@ small {
 .table thead th {
   background: #fff;
   font-size: 0.875em;
-  font-weight: 200;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -526,7 +526,6 @@ a.button.secondary {
 }
 
 .footer__logo img {
-  width: 100%;
   max-height: 60px;
 }
 
@@ -673,7 +672,7 @@ a.navbar__home {
 }
 
 .navbar__gouvfr {
-  height: 18.4px;
+  height: 20px;
 }
 
 span.navbar__domain {
@@ -730,8 +729,7 @@ span.navbar__domain {
   display: block;
 }
 
-.row,
-.column {
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,11 +739,8 @@ span.navbar__domain {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin-left: -1em;
-  margin-right: -1em;
-}
-
-.row {
+  margin-left: -2em;
+  margin-right: -2em;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -756,15 +751,8 @@ span.navbar__domain {
   max-width: 50em;
 }
 
-.column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .row > * {
-  margin: 0 1em;
+  margin: 0 2em;
 }
 
 @media (max-width: 749px) {
@@ -778,10 +766,6 @@ span.navbar__domain {
   .row > * {
     margin: 1em;
   }
-}
-
-.column img {
-  width: 100%;
 }
 
 .grid {
@@ -807,6 +791,7 @@ span.navbar__domain {
           box-shadow: 0 1px 4px #c9d3df;
   padding: 2em;
   position: relative;
+  border: 1px solid #c9d3df;
 }
 
 .panel + * {
@@ -827,7 +812,7 @@ span.navbar__domain {
   width: calc(100% + 4em);
   position: relative;
   left: -2em;
-  border-bottom: 1px solid #adb9c9;
+  border-bottom: 1px solid #c9d3df;
   margin-bottom: 2em;
 }
 
@@ -862,7 +847,7 @@ span.navbar__domain {
 }
 
 .section-color {
-  background-color: #0053b3;
+  background-color: #003b80;
   color: #fff;
 }
 
@@ -1701,13 +1686,15 @@ a.article__link:hover {
   margin: 0;
 }
 
-.label {
+.label,
+a.label {
   background-color: #ebeff3;
   border-radius: 3px;
   display: inline-block;
   padding: 0.3em 0.8em;
   margin: 0.25em;
   font-size: 0.875em;
+  text-decoration: none;
 }
 
 .label--active {
