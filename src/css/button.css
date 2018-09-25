@@ -49,10 +49,78 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+a.button-outline,
+a.button-outline:focus,
+a.button-outline:active,
+a.button-outline:visited,
+button.button-outline,
+button.button-outline:focus,
+button.button-outline:active,
+button.button-outline:visited {
+  display: inline-block;
+  padding: 0.5em 2em;
+  border-radius: var(--theme-border-radius);
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 1em;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+a.button-outline:hover,
+button.button-outline:hover,
+input[type="submit"].button-outline:hover,
+input[type="button"].button-outline:hover {
+  border-color: var(--light-grey);
+  color: var(--light-grey);
+}
+
+.button-outline.primary,
+a.button-outline.primary {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.button-outline.primary:hover,
+.button-outline.primary:active {
+  border-color: var(--dark-blue);
+  color: var(--dark-blue);
+}
+
+.button-outline.warning,
+a.button-outline.warning {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.button-outline.warning:hover,
+.button-outline.warning:active {
+  border-color: var(--dark-red);
+  color: var(--dark-red);
+}
+
+.button-outline.secondary,
+a.button-outline.secondary {
+  border-color: var(--darker-grey);
+  color: var(--darker-grey);
+}
+
+.button-outline.secondary:hover,
+.button-outline.secondary:active {
+  border-color: var(--almost-black);
+  color: var(--almost-black);
+}
+
 a.button.small,
 button.button.small,
 input[type="submit"].small,
-input[type="button"].small {
+input[type="button"].small,
+a.button-outline.small,
+button.button-outline.small {
   font-size: 0.825em;
   padding: 0.25em 1em;
 }
@@ -60,7 +128,9 @@ input[type="button"].small {
 a.button.large,
 button.button.large,
 input[type="submit"].large,
-input[type="button"].large {
+input[type="button"].large,
+a.button-outline.large,
+button.button-outline.large {
   font-size: 1.25em;
 }
 
@@ -86,6 +156,7 @@ a.button.secondary {
   background-color: var(--almost-black);
 }
 
-.button + .button {
+.button + .button,
+.button-outline + .button-outline {
   margin-left: 1em;
 }

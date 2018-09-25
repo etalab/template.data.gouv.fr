@@ -154,3 +154,14 @@
 .form__group + .button {
   margin-top: 2em;
 }
+
+.light-background {
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  padding: 1em;
+}
+
+.dark-background {
+  background-color: var(--darker-grey);
+  padding: 1em;
+}
