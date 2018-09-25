@@ -1,4 +1,4 @@
-table {
+.table {
   background: var(--theme-background-white);
   border: var(--light-grey);
   border-radius: 2px;
@@ -8,23 +8,23 @@ table {
   border-collapse: collapse;
 }
 
-td,
-th {
+.table td,
+.table th {
   padding: 1em;
   text-align: left;
 }
 
-td {
+.table td {
   border-top: 1px solid var(--theme-border);
 }
 
-thead th {
+.table thead th {
   background: var(--white);
   font-size: 0.875em;
   font-weight: 200;
   text-transform: uppercase;
 }
 
-tr:hover {
+.table tr:hover {
   background: var(--lightest-grey);
 }
