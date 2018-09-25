@@ -1,8 +1,12 @@
+:root {
+  --row-margin: 2em;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin-left: -2em;
+  margin-left: -var(--row-margin);
   margin-right: -2em;
   flex-direction: row;
 }
@@ -12,7 +16,7 @@
 }
 
 .row > * {
-  margin: 0 2em;
+  margin: 0 var(--row-margin);
 }
 
 @media (--smaller-than-tablet) {
