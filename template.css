@@ -131,7 +131,7 @@ small {
   margin: auto;
 }
 
-table {
+.table {
   background: #fff;
   border: #c9d3df;
   border-radius: 2px;
@@ -142,24 +142,24 @@ table {
   border-collapse: collapse;
 }
 
-td,
-th {
+.table td,
+.table th {
   padding: 1em;
   text-align: left;
 }
 
-td {
+.table td {
   border-top: 1px solid #adb9c9;
 }
 
-thead th {
+.table thead th {
   background: #fff;
   font-size: 0.875em;
   font-weight: 200;
   text-transform: uppercase;
 }
 
-tr:hover {
+.table tr:hover {
   background: #fafbfc;
 }
 
@@ -773,7 +773,7 @@ span.navbar__domain {
   color: #53657d;
 }
 
-section {
+.section {
   padding: 5em 0;
 }
 
