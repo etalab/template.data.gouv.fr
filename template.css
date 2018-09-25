@@ -240,10 +240,78 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+a.button-outline,
+a.button-outline:focus,
+a.button-outline:active,
+a.button-outline:visited,
+button.button-outline,
+button.button-outline:focus,
+button.button-outline:active,
+button.button-outline:visited {
+  display: inline-block;
+  padding: 0.5em 2em;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 1em;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+a.button-outline:hover,
+button.button-outline:hover,
+input[type="submit"].button-outline:hover,
+input[type="button"].button-outline:hover {
+  border-color: #c9d3df;
+  color: #c9d3df;
+}
+
+.button-outline.primary,
+a.button-outline.primary {
+  border-color: #0053b3;
+  color: #0053b3;
+}
+
+.button-outline.primary:hover,
+.button-outline.primary:active {
+  border-color: #003b80;
+  color: #003b80;
+}
+
+.button-outline.warning,
+a.button-outline.warning {
+  border-color: #d63626;
+  color: #d63626;
+}
+
+.button-outline.warning:hover,
+.button-outline.warning:active {
+  border-color: #ab2b1e;
+  color: #ab2b1e;
+}
+
+.button-outline.secondary,
+a.button-outline.secondary {
+  border-color: #53657d;
+  color: #53657d;
+}
+
+.button-outline.secondary:hover,
+.button-outline.secondary:active {
+  border-color: #26353f;
+  color: #26353f;
+}
+
 a.button.small,
 button.button.small,
 input[type="submit"].small,
-input[type="button"].small {
+input[type="button"].small,
+a.button-outline.small,
+button.button-outline.small {
   font-size: 0.825em;
   padding: 0.25em 1em;
 }
@@ -251,7 +319,9 @@ input[type="button"].small {
 a.button.large,
 button.button.large,
 input[type="submit"].large,
-input[type="button"].large {
+input[type="button"].large,
+a.button-outline.large,
+button.button-outline.large {
   font-size: 1.25em;
 }
 
@@ -279,7 +349,8 @@ a.button.secondary {
   background-color: #26353f;
 }
 
-.button + .button {
+.button + .button,
+.button-outline + .button-outline {
   margin-left: 1em;
 }
 
@@ -1812,4 +1883,15 @@ a.article__link:hover {
 
 .form__group + .button {
   margin-top: 2em;
+}
+
+.light-background {
+  background-color: #fff;
+  border: 1px solid #adb9c9;
+  padding: 1em;
+}
+
+.dark-background {
+  background-color: #53657d;
+  padding: 1em;
 }
