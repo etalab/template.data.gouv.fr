@@ -3,13 +3,15 @@
   margin: 0;
 }
 
-.label {
+.label,
+a.label {
   background-color: var(--lighter-grey);
   border-radius: var(--theme-border-radius);
   display: inline-block;
   padding: 0.3em 0.8em;
   margin: 0.25em;
   font-size: 0.875em;
+  text-decoration: none;
 }
 
 .label--active {

@@ -33,7 +33,7 @@
   --theme-border-radius: 3px;
   --theme-background-white: var(--white);
   --theme-background-grey: var(--lighter-grey);
-  --theme-background-color: var(--blue);
+  --theme-background-color: var(--dark-blue);
   --theme-background-dark: var(--black);
   --theme-box-shadow: var(--light-grey);
   --theme-label-text: var(--darker-grey);
