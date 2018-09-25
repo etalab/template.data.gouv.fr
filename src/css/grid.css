@@ -1,13 +1,9 @@
-.row,
-.column {
+.row {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin-left: -1em;
-  margin-right: -1em;
-}
-
-.row {
+  margin-left: -2em;
+  margin-right: -2em;
   flex-direction: row;
 }
 
@@ -15,12 +11,8 @@
   max-width: 50em;
 }
 
-.column {
-  flex-direction: column;
-}
-
 .row > * {
-  margin: 0 1em;
+  margin: 0 2em;
 }
 
 @media (--smaller-than-tablet) {
@@ -31,10 +23,6 @@
   .row > * {
     margin: 1em;
   }
-}
-
-.column img {
-  width: 100%;
 }
 
 .grid {
