@@ -78,12 +78,13 @@ a.navbar__home {
 }
 
 .navbar__gouvfr {
-  height: 20px;
+  height: 100%;
 }
 
 span.navbar__domain {
   font-weight: 400;
   color: var(--theme-dark-text);
+  -webkit-padding-after: 3px; /* fix the broken line-height in logo */
 }
 
 @media (--smaller-than-tablet) {
