@@ -1,7 +1,7 @@
 .panel {
   background: var(--theme-background-white);
   border-radius: 2px;
-  box-shadow: 0 1px 4px var(--theme-box-shadow);
+  box-shadow: var(--theme-box-shadow);
   padding: 2em;
   position: relative;
   border: 1px solid var(--theme-border-lighter);
@@ -26,7 +26,7 @@
   position: relative;
   left: -2em;
   border-bottom: 1px solid var(--theme-border-lighter);
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 
 .panel__header h3 {
@@ -34,10 +34,17 @@
 }
 
 .panel__header h3:first-of-type {
-  margin-top: 0;
+  margin: 0;
 }
 
 .panel__header-extra {
   margin-left: 1em;
   color: var(--theme-label-text);
+  display: inline-block;
+}
+
+@media (--smaller-than-phablet) {
+  .panel__header-extra {
+    margin: 0;
+  }
 }

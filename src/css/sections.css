@@ -20,6 +20,10 @@
   color: #fff;
 }
 
+.section__title:first-child {
+  margin-top: 0;
+}
+
 .section__subtitle {
   margin: 0 auto;
   font-weight: 400;
@@ -35,8 +39,9 @@
   color: currentColor;
 }
 
-.section__title + .section__subtitle {
-  margin-top: -3em;
+.section__title + .row,
+.section__subtitle + .row {
+  margin-top: 3em;
 }
 
 .section__title,

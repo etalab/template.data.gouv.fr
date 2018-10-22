@@ -38,5 +38,15 @@
   padding: 1em;
   margin: 0.5em 0;
   border-radius: var(--theme-border-radius);
-  background-color: #ebeff3;
+  background-color: var(--lightest-grey);
+  border: 1px solid var(--theme-border-lighter);
+}
+
+.richtext a,
+.richtext a:hover,
+.richtext a:focus,
+.richtext a:visited,
+.richtext a:active {
+  color: var(--theme-primary);
+  transition: color 0.2s ease-out;
 }

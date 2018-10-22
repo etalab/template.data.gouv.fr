@@ -6,7 +6,19 @@
   padding: 0 20px;
 }
 
-.container h1:first-of-type {
+.container.container-medium {
+  max-width: 750px;
+}
+
+.container.container-small {
+  max-width: 550px;
+}
+
+.container.container-full {
+  max-width: none;
+}
+
+.container h1:first-child {
   margin-top: 0;
 }
 
