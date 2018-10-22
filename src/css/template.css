@@ -9,7 +9,16 @@
 }
 
 .typography__sample > * {
+  display: inline;
   margin: 0;
+}
+
+.typography__caption {
+  margin-left: 1em;
+}
+
+.text-quote {
+  display: block;
 }
 
 .color-panel {

@@ -26,8 +26,9 @@ a:hover,
 a:focus,
 a:visited,
 a:active {
+  text-decoration: underline;
   transition: color 0.2s ease-out;
-  color: currentColor;
+  color: var(--theme-primary);
 }
 
 small {

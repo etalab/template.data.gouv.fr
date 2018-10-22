@@ -19,28 +19,34 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
   font-size: 1em;
 }
 
-* + h1,
-* + h2,
-* + h3,
-* + h4,
-* + h5,
-* + h6 {
-  margin-top: 2em;
+.subtitle {
+  font-weight: 400;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: var(--darker-grey);
 }
 
 .lead-text {
   font-size: 1.25em;
+  color: var(--darker-grey);
 }
 
 p {
