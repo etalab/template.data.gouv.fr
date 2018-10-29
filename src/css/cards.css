@@ -1,22 +1,26 @@
 .card {
   background: var(--theme-background-white);
   border-radius: 2px;
-  box-shadow: 0 1px 4px var(--theme-box-shadow);
+  box-shadow: var(--theme-box-shadow);
   position: relative;
   overflow: hidden;
   display: flex;
   flex: 1;
   flex-direction: column;
   width: 100%;
+  border: 1px solid var(--theme-border-lighter);
 }
 
-.row > .card + .card {
-  margin-left: 2em;
+.row .card {
+  margin: 0 1em;
 }
 
 @media (--smaller-than-tablet) {
+  .row > .card {
+    margin: 0;
+  }
+
   .row > .card + .card {
-    margin-left: 0;
     margin-top: 2em;
   }
 }

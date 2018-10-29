@@ -3,15 +3,18 @@
   margin: 0;
 }
 
-.label,
-a.label {
+.label {
   background-color: var(--lighter-grey);
   border-radius: var(--theme-border-radius);
   display: inline-block;
   padding: 0.3em 0.8em;
   margin: 0.25em;
   font-size: 0.875em;
+}
+
+.label a {
   text-decoration: none;
+  color: var(--theme-dark-text);
 }
 
 .label--active {
@@ -22,5 +25,9 @@ a.label {
 .label--inactive {
   background-color: var(--white);
   border: 1px solid var(--theme-border);
+  color: var(--darker-grey);
+}
+
+.label--inactive a {
   color: var(--darker-grey);
 }

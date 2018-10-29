@@ -4,12 +4,12 @@ pre {
 }
 
 code {
-  background: var(--lighter-grey);
+  background: var(--lightest-grey);
   border-radius: var(--theme-border-radius);
   padding: 0 0.5em;
   font-family: 'Courier New';
   font-size: 0.9em;
-  word-break: break-word;
+  word-wrap: break-word;
   white-space: pre-wrap;
   vertical-align: middle;
   display: inline-block;

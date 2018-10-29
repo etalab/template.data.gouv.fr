@@ -9,7 +9,16 @@
 }
 
 .typography__sample > * {
+  display: inline;
   margin: 0;
+}
+
+.typography__caption {
+  margin-left: 1em;
+}
+
+.text-quote {
+  display: block;
 }
 
 .color-panel {
@@ -135,7 +144,7 @@
   background: var(--lighter-blue);
 }
 
-.documentation {
+#documentation {
   border-top: 1px solid var(--theme-border-lighter);
   border-bottom: 1px solid var(--theme-border-lighter);
 }
@@ -152,7 +161,7 @@
 }
 
 .form__group + .button {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .light-background {

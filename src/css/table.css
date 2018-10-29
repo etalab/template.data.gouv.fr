@@ -1,6 +1,8 @@
 .table {
   background: var(--theme-background-white);
-  border: var(--light-grey);
+  border: 1px solid var(--theme-border-lighter);
+  border-left: 0;
+  border-right: 0;
   border-radius: 2px;
   box-shadow: 0 1px 4px var(--theme-box-shadow);
   position: relative;
@@ -15,11 +17,12 @@
 }
 
 .table td {
-  border-top: 1px solid var(--theme-border);
+  border-top: 1px solid var(--lighter-grey);
 }
 
 .table thead th {
-  background: var(--white);
+  background: var(--lightest-grey);
+  border-bottom: 1px solid var(--theme-border-lighter);
   font-size: 0.875em;
   font-weight: 700;
   text-transform: uppercase;

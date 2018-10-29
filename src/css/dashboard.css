@@ -21,6 +21,7 @@
   display: block;
   width: 100%;
   color: var(--theme-dark-text);
+  text-decoration: none;
 }
 
 .dashboard .side-menu a.active {
@@ -43,4 +44,10 @@
 
 .dashboard table {
   box-shadow: none;
+}
+
+@media (--smaller-than-tablet) {
+  .dashboard {
+    flex-direction: column;
+  }
 }
