@@ -1,6 +1,6 @@
 {
   "name": "template.data.gouv.fr",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Template CSS pour data.gouv.fr et compagnie.",
   "license": "MIT",
   "devDependencies": {
