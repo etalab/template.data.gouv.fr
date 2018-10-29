@@ -690,12 +690,13 @@ a.navbar__home {
 }
 
 .navbar__gouvfr {
-  height: 20px;
+  height: 100%;
 }
 
 span.navbar__domain {
   font-weight: 400;
   color: #26353f;
+  -webkit-padding-after: 3px; /* fix the broken line-height in logo */
 }
 
 @media (max-width: 749px) {
