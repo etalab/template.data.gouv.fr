@@ -4,7 +4,7 @@ module.exports = (ctx) => ({
     'stylelint': {
       fix: true
     },
-    'postcss-cssnext': {
+    'postcss-preset-env': {
       warnForDuplicates: false,
       browsers: ['last 2 versions']
     },
