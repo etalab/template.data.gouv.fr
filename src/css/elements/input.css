@@ -1,8 +1,3 @@
-form {
-  max-width: 520px;
-  margin: 0 auto;
-}
-
 input,
 textarea,
 select {
@@ -119,77 +114,4 @@ select:focus {
 select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
-}
-
-label,
-legend {
-  display: block;
-  margin-bottom: 0.5em;
-  color: var(--almost-black);
-}
-
-label.label-inline {
-  display: inline;
-  color: var(--black);
-}
-
-.label-inline + input[type=radio],
-.label-inline + input[type=checkbox] {
-  margin-left: 10px;
-}
-
-.form__container {
-  max-width: 30em;
-  margin: auto;
-}
-
-.form__group {
-  position: relative;
-  display: block;
-}
-
-.form__group + .form__group {
-  margin-top: 2em;
-}
-
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.overlay-button {
-  position: absolute;
-  right: 2em;
-  top: 1.25em;
-  background: 0;
-  border: 0;
-  width: 15px;
-  height: 15px;
-}
-
-.search__group {
-  position: relative;
-}
-
-.overlayed-button .icon-search {
-  height: 15px;
-  width: 15px;
-}
-
-.input__group {
-  display: flex;
-  flex-direction: row;
-}
-
-.input__group .icon-button,
-.input__group .icon-button:active {
-  margin-left: 1em;
-  padding: 0 0.8em;
-}
-
-.input__group .icon-button .icon {
-  width: 16px;
-  height: 16px;
 }

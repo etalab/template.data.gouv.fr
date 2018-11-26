@@ -1,0 +1,12 @@
+a,
+button {
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  color: var(--theme-primary);
+}

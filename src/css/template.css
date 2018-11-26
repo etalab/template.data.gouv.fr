@@ -105,7 +105,7 @@
 }
 
 .color-panel__sample.almost-black {
-  background: var(--almost-black);
+  background: var(--darkest-grey);
 }
 
 .color-panel__sample.black {
