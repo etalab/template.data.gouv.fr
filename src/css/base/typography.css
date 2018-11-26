@@ -1,6 +1,7 @@
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,14 +17,17 @@ h6 {
 
 h1 {
   font-size: 2em;
+  line-height: 1.125em;
 }
 
 h2 {
   font-size: 1.75em;
+  line-height: 1.25em;
 }
 
 h3 {
   font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 h4 {
@@ -49,24 +53,8 @@ h6 {
   color: var(--darker-grey);
 }
 
-p {
-  line-height: 1.5em;
-}
-
 .subtitle {
   color: var(--dark-grey);
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-quote {

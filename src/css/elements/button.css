@@ -111,8 +111,8 @@ a.button-outline.secondary {
 
 .button-outline.secondary:hover,
 .button-outline.secondary:active {
-  border-color: var(--almost-black);
-  color: var(--almost-black);
+  border-color: var(--darkest-grey);
+  color: var(--theme-dark-text);
 }
 
 a.button.small,
@@ -148,12 +148,12 @@ a.button.warning {
 .button.secondary,
 a.button.secondary {
   background-color: var(--darker-grey);
-  box-shadow: 0 -2px inset var(--almost-black);
+  box-shadow: 0 -2px inset var(--darkest-grey);
 }
 
 .button.secondary:hover,
 .button.secondary:active {
-  background-color: var(--almost-black);
+  background-color: var(--darkest-grey);
 }
 
 .button + .button,

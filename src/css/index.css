@@ -1,27 +1,30 @@
-@import "theme.css";
-@import "media-queries.css";
-@import "typography.css";
-@import "icons.css";
-@import "main.css";
-@import "table.css";
-@import "code.css";
-@import "button.css";
-@import "container.css";
-@import "fonts.css";
-@import "notifications.css";
-@import "footer.css";
-@import "hero.css";
-@import "nav.css";
-@import "dropdown.css";
-@import "layout.css";
-@import "panel.css";
-@import "sections.css";
-@import "form.css";
-@import "richtext.css";
-@import "documentation.css";
-@import "dashboard.css";
-@import "article.css";
-@import "cards.css";
-@import "modal.css";
-@import "labels.css";
+@import "base/theme.css";
+@import "base/media-queries.css";
+@import "base/typography.css";
+@import "base/main.css";
 
+@import "elements/input.css";
+@import "elements/button.css";
+@import "elements/table.css";
+@import "elements/icon.css";
+@import "elements/label.css";
+
+@import "components/form.css";
+@import "components/article.css";
+@import "components/card.css";
+@import "components/panel.css";
+@import "components/dropdown.css";
+@import "components/modal.css";
+
+@import "layouts/container.css";
+@import "layouts/nav.css";
+@import "layouts/hero.css";
+@import "layouts/footer.css";
+@import "layouts/section.css";
+@import "layouts/article.css";
+@import "layouts/dashboard.css";
+@import "layouts/documentation.css";
+
+@import "utility/alignment.css";
+@import "utility/text-colors.css";
+@import "utility/layout.css";
