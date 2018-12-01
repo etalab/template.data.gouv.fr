@@ -17,8 +17,8 @@
   "scripts": {
     "deploy": "gh-pages -d dist -m 'Deploy [skip ci]'",
     "dev": "postcss --output dist/template.css --watch src/css/template.css",
-    "lint": "stylelint --fix src/css/*.css",
-    "test": "stylelint src/css/*.css",
+    "lint": "stylelint --fix src/css/**/*.css",
+    "test": "stylelint src/css/**/*.css",
     "dist": "rm -rf dist && yarn dist-css && yarn dist-site",
     "dist-site": "copyfiles CNAME images/* images/**/* fonts/**/* index.html dist",
     "dist-css": "postcss --output dist/template.css src/css/template.css",
