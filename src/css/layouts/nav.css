@@ -64,7 +64,7 @@ a.navbar__home {
   font-family: 'Evolventa';
   display: flex;
   align-items: center;
-  color: var(--almost-black);
+  color: var(--theme-dark-text);
   letter-spacing: 0.05em;
   text-decoration: none;
 }

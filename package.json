@@ -1,6 +1,6 @@
 {
   "name": "template.data.gouv.fr",
-  "version": "1.1.8",
+  "version": "1.2.0",
   "description": "Template CSS pour data.gouv.fr et compagnie.",
   "license": "MIT",
   "devDependencies": {
@@ -8,8 +8,8 @@
     "cssnano": "^3.10.0",
     "gh-pages": "^1.0.0",
     "postcss-cli": "^4.1.1",
-    "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",
+    "postcss-preset-env": "^6.4.0",
     "postcss-reporter": "^5.0.0",
     "stylelint": "^8.1.1",
     "stylelint-config-standard": "^17.0.0"
@@ -17,8 +17,8 @@
   "scripts": {
     "deploy": "gh-pages -d dist -m 'Deploy [skip ci]'",
     "dev": "postcss --output dist/template.css --watch src/css/template.css",
-    "lint": "stylelint --fix src/css/*.css",
-    "test": "stylelint src/css/*.css",
+    "lint": "stylelint --fix src/css/**/*.css",
+    "test": "stylelint src/css/**/*.css",
     "dist": "rm -rf dist && yarn dist-css && yarn dist-site",
     "dist-site": "copyfiles CNAME images/* images/**/* fonts/**/* index.html dist",
     "dist-css": "postcss --output dist/template.css src/css/template.css",

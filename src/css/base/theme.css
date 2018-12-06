@@ -1,3 +1,5 @@
+/* Variables definition */
+
 :root {
   /* Colors */
   --blue: #0053b3;
@@ -11,7 +13,7 @@
   --grey: #adb9c9;
   --dark-grey: #8393a7;
   --darker-grey: #53657d;
-  --almost-black: #26353f;
+  --darkest-grey: #26353f;
   --black: #1c1c1c;
   --green: #03bd5b;
   --light-green: #daf5e7;
@@ -20,6 +22,15 @@
   --red: #d63626;
   --dark-red: #ab2b1e;
   --light-red: #efaca6;
+
+  /* Breakpoints */
+  --mobile-min: 400px;
+  --mobile-max: 549px;
+  --phablet-min: 550px;
+  --phablet-max: 749px;
+  --tablet-min: 750px;
+  --tablet-max: 999px;
+  --desktop-min: 1000px;
 
   /* Theme */
   --theme-primary: var(--blue);
@@ -38,7 +49,7 @@
   --theme-box-shadow: 0 1px 2px rgba(201, 211, 223, 0.2);
   --theme-label-text: var(--darker-grey);
   --theme-light-text: var(--white);
-  --theme-dark-text: var(--almost-black);
+  --theme-dark-text: var(--darkest-grey);
   --theme-success-border: var(--green);
   --theme-success-bg: var(--light-green);
   --theme-warning-border: var(--orange);
