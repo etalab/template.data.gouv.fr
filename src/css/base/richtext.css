@@ -48,5 +48,4 @@
 .richtext a:visited,
 .richtext a:active {
   color: var(--theme-primary);
-  transition: color 0.2s ease-out;
 }

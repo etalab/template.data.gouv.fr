@@ -43,7 +43,8 @@
 }
 
 .side-pane li:hover .side-pane__link {
-  background: var(--light-grey);
+  background: var(--lighter-grey);
+  text-decoration: none;
 }
 
 .side-pane li.active .side-pane__link {
@@ -58,7 +59,7 @@
 }
 
 .side-pane li.side-pane__dropdown:hover .side-pane__link {
-  background: var(--light-grey) url("../images/icons/external/arrow-right.svg") no-repeat;
+  background: var(--lighter-grey) url("../images/icons/external/arrow-right.svg") no-repeat;
   background-position: center right 1em;
   background-size: 15px 15px;
 }
@@ -100,7 +101,8 @@
 
 .side-pane__submenu .side-pane__sublink:hover {
   color: var(--theme-dark-text);
-  background: var(--light-grey);
+  background: var(--lighter-grey);
+  text-decoration: none;
 }
 
 .side-pane__submenu li.active {

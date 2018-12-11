@@ -21,13 +21,19 @@ button {
 }
 
 a,
-a:hover,
 a:focus,
 a:visited,
 a:active {
   text-decoration: underline;
-  transition: color 0.2s ease-out;
   color: var(--theme-primary);
+}
+
+a:hover {
+  border-radius: var(--theme-border-radius);
+  color: var(--dark-blue);
+  background-color: var(--lighter-grey);
+  text-decoration: none;
+  transition: all 0.2s ease-in;
 }
 
 small {

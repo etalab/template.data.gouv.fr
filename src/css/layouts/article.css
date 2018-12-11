@@ -121,10 +121,6 @@ a.article__link {
   text-decoration: none;
 }
 
-a.article__link:hover {
-  color: var(--theme-primary);
-}
-
 .article__title {
   margin-bottom: 0;
 }
