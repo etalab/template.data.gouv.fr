@@ -32,6 +32,13 @@
   --tablet-max: 999px;
   --desktop-min: 1000px;
 
+  /* Spaces */
+  --space-xs: 0.5em;
+  --space-s: 1em;
+  --space-m: 1.5em;
+  --space-l: 2em;
+  --space-xl: 3em;
+
   /* Theme */
   --theme-primary: var(--blue);
   --theme-primary-light: var(--light-blue);

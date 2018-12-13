@@ -22,6 +22,7 @@
 
 .section__title:first-child {
   margin-top: 0;
+  margin-bottom: var(--space-xs);
 }
 
 .section__subtitle {
@@ -41,7 +42,7 @@
 
 .section__title + .row,
 .section__subtitle + .row {
-  margin-top: 3em;
+  margin-top: var(--space-xl);
 }
 
 .section__title,
@@ -50,5 +51,5 @@
 }
 
 .section__title + .section__subtitle {
-  margin-top: -1em;
+  margin-top: -var(--space-s);
 }

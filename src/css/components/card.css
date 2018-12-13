@@ -39,7 +39,7 @@
 }
 
 .card__content {
-  padding: 2em;
+  padding: var(--space-m);
   flex-grow: 1;
 }
 
@@ -61,5 +61,5 @@
 
 .card__extra {
   border-top: 1px solid var(--theme-border);
-  padding: 1em;
+  padding: var(--space-s);
 }

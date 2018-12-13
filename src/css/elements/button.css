@@ -15,14 +15,14 @@ input[type="button"]:focus,
 input[type="button"]:active,
 input[type="button"]:visited {
   display: inline-block;
-  padding: 0.5em 2em;
+  padding: var(--space-xs) var(--space-l);
   color: var(--theme-light-text);
   background-color: var(--theme-primary);
   border-radius: var(--theme-border-radius);
   border: 0;
   box-shadow: 0 -2px inset var(--theme-primary-dark);
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 1em;
+  font-size: var(--space-s);
   position: relative;
   top: 0;
   overflow: hidden;
@@ -58,10 +58,10 @@ button.button-outline:focus,
 button.button-outline:active,
 button.button-outline:visited {
   display: inline-block;
-  padding: 0.5em 2em;
+  padding: var(--space-xs) var(--space-l);
   border-radius: var(--theme-border-radius);
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 1em;
+  font-size: var(--space-s);
   position: relative;
   top: 0;
   overflow: hidden;

@@ -3,13 +3,13 @@
 }
 
 .side-pane {
-  padding: 2.5rem 2rem;
+  padding: var(--space-l) 0;
   flex: 0 0 25%;
 }
 
 .side-pane h2 {
   margin-top: 0;
-  padding: 0.5rem;
+  padding: var(--space-xs);
 }
 
 .side-pane .side-pane__menu {
@@ -21,23 +21,22 @@
 }
 
 .side-pane__title {
-  padding: 0 1rem;
+  padding: 0 var(--space-s);
 }
 
 .side-pane__title h3 {
   font-family: 'Source Sans Pro';
-  font-size: 0.9rem;
   text-transform: uppercase;
-  padding-bottom: 1rem;
+  padding-bottom: var(--space-s);
   border-bottom: 1px solid var(--theme-border);
 }
 
 .side-pane .side-pane__link {
-  padding: 0.5rem 1rem;
+  padding: var(--space-xs) var(--space-s);
   display: block;
   width: 100%;
   border-radius: var(--theme-border-radius);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-xs);
   color: var(--theme-dark-text);
   text-decoration: none;
 }
@@ -54,13 +53,13 @@
 
 .side-pane li.side-pane__dropdown .side-pane__link {
   background: url("../images/icons/external/arrow-right.svg") no-repeat;
-  background-position: center right 1em;
+  background-position: center right var(--space-s);
   background-size: 15px 15px;
 }
 
 .side-pane li.side-pane__dropdown:hover .side-pane__link {
   background: var(--lighter-grey) url("../images/icons/external/arrow-right.svg") no-repeat;
-  background-position: center right 1em;
+  background-position: center right var(--space-s);
   background-size: 15px 15px;
 }
 
@@ -79,14 +78,14 @@
 }
 
 .side-pane__submenu {
-  padding-left: 2rem;
-  margin-bottom: 0.5rem;
+  padding-left: var(--space-l);
+  margin-bottom: var(--space-xs);
   display: none;
 }
 
 .side-pane__sublink,
 .side-pane__sublink:visited {
-  padding: 0.5rem;
+  padding: var(--space-xs);
   list-style-type: none;
   color: var(--darker-grey);
   border-radius: var(--theme-border-radius);
@@ -96,7 +95,7 @@
 
 .side-pane__submenu li {
   list-style-type: none;
-  margin: 0.5rem 0;
+  margin: var(--space-xs) 0;
 }
 
 .side-pane__submenu .side-pane__sublink:hover {
@@ -116,7 +115,7 @@
 }
 
 .main-pane {
-  padding: 3rem;
+  padding: var(--space-xl);
   background: var(--white);
   flex: 1;
 }
