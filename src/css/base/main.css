@@ -42,3 +42,9 @@ small {
 .modals .button {
   margin: auto;
 }
+
+hr {
+  margin: 3em 0;
+  border-top: 0;
+  border-bottom: 1px solid var(--theme-border);
+}
