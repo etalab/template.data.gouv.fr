@@ -21,7 +21,7 @@
     "lint": "stylelint --fix src/css/**/*.css",
     "test": "stylelint src/css/**/*.css",
     "dist": "rm -rf dist && yarn dist-css && yarn dist-site",
-    "dist-site": "copyfiles CNAME images/* images/**/* fonts/**/* index.html dist",
+    "dist-site": "copyfiles CNAME images/* images/*/* images/icons/external/* fonts/*/* index.html dist",
     "dist-css": "postcss --output dist/template.css src/css/template.css",
     "prepublish-css": "postcss --output dist/main.css src/css/index.css && NODE_ENV=production postcss --output dist/main.min.css src/css/index.css",
     "prepublish": "rm -rf dist && yarn prepublish-css && copyfiles images/* images/icons/external/* images/favicons/* fonts/**/* dist"
