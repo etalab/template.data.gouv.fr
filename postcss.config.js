@@ -1,9 +1,12 @@
 module.exports = (ctx) => ({
   plugins: {
-    'postcss-import': {},
+    'postcss-import': {
+      stage: 0
+    },
     'stylelint': {
       fix: true
     },
+    'postcss-custom-media': {},
     'postcss-preset-env': {
       warnForDuplicates: false,
       browsers: ['last 2 versions']

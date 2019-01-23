@@ -8,6 +8,7 @@
     "cssnano": "^3.10.0",
     "gh-pages": "^1.0.0",
     "postcss-cli": "^4.1.1",
+    "postcss-custom-media": "^7.0.7",
     "postcss-import": "^11.0.0",
     "postcss-preset-env": "^6.4.0",
     "postcss-reporter": "^5.0.0",
