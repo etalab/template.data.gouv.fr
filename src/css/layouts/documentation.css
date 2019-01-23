@@ -49,13 +49,13 @@
 }
 
 .side-pane li.side-pane__dropdown > a {
-  background: url("../images/icons/external/arrow-right.svg") no-repeat;
+  background: url("images/icons/external/arrow-right.svg") no-repeat;
   background-position: center right var(--space-s);
   background-size: 15px 15px;
 }
 
 .side-pane li.side-pane__dropdown > a:hover {
-  background: url("../images/icons/external/arrow-right.svg") no-repeat;
+  background: url("images/icons/external/arrow-right.svg") no-repeat;
   background-position: center right var(--space-s);
   background-size: 15px 15px;
   text-decoration: underline;
@@ -63,7 +63,7 @@
 
 .side-pane li.unfolded.side-pane__dropdown > a,
 .side-pane li.unfolded.side-pane__dropdown > a:hover {
-  background-image: url("../images/icons/external/arrow-down.svg");
+  background-image: url("images/icons/external/arrow-down.svg");
 }
 
 .side-pane li.active.side-pane__dropdown a {

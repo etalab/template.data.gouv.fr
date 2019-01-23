@@ -1,4 +1,5 @@
 /* global rules */
+@import "base/fonts.css";
 @import "base/theme.css";
 @import "base/media-queries.css";
 @import "base/typography.css";
