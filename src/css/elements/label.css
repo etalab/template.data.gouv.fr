@@ -30,4 +30,5 @@
 
 .label--inactive a {
   color: var(--darker-grey);
+  background: 0;
 }
