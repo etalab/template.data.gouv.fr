@@ -1,5 +1,35 @@
 /* global rules */
 
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("fonts/Source Sans Pro/SourceSansPro-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("fonts/Source Sans Pro/SourceSansPro-Bold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("fonts/Source Sans Pro/SourceSansPro-It.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Evolventa";
+  src: url("fonts/Evolventa/Evolventa-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Evolventa";
+  src: url("fonts/Evolventa/Evolventa-Bold.ttf");
+  font-weight: 800;
+}
+
 /* Variables definition */
 :root {
   /* Colors */
@@ -1767,14 +1797,14 @@ a.article__link {
 }
 
 .side-pane li.side-pane__dropdown > a {
-  background: url("../images/icons/external/arrow-right.svg") no-repeat;
+  background: url("images/icons/external/arrow-right.svg") no-repeat;
   background-position: center right 1em;
   background-position: center right var(--space-s);
   background-size: 15px 15px;
 }
 
 .side-pane li.side-pane__dropdown > a:hover {
-  background: url("../images/icons/external/arrow-right.svg") no-repeat;
+  background: url("images/icons/external/arrow-right.svg") no-repeat;
   background-position: center right 1em;
   background-position: center right var(--space-s);
   background-size: 15px 15px;
@@ -1783,7 +1813,7 @@ a.article__link {
 
 .side-pane li.unfolded.side-pane__dropdown > a,
 .side-pane li.unfolded.side-pane__dropdown > a:hover {
-  background-image: url("../images/icons/external/arrow-down.svg");
+  background-image: url("images/icons/external/arrow-down.svg");
 }
 
 .side-pane li.active.side-pane__dropdown a {
