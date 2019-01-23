@@ -12,7 +12,7 @@
 
 .table td,
 .table th {
-  padding: 1em;
+  padding: var(--space-s);
   text-align: left;
 }
 

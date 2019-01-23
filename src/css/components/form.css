@@ -6,7 +6,7 @@ form {
 label,
 legend {
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: var(--space-xs);
   color: var(--theme-dark-text);
 }
 
@@ -17,11 +17,11 @@ label.label-inline {
 
 .label-inline + input[type=radio],
 .label-inline + input[type=checkbox] {
-  margin-left: 10px;
+  margin-left: var(--space-xs);
 }
 
 .form__container {
-  max-width: 30em;
+  max-width: 35em;
   margin: auto;
 }
 
@@ -31,7 +31,7 @@ label.label-inline {
 }
 
 .form__group + .form__group {
-  margin-top: 2em;
+  margin-top: var(--space-l);
 }
 
 fieldset {
@@ -43,7 +43,7 @@ fieldset {
 
 .overlay-button {
   position: absolute;
-  right: 2em;
+  right: var(--space-l);
   top: 1.25em;
   background: 0;
   border: 0;
@@ -67,7 +67,7 @@ fieldset {
 
 .input__group .icon-button,
 .input__group .icon-button:active {
-  margin-left: 1em;
+  margin-left: var(--space-s);
   padding: 0 0.8em;
 }
 

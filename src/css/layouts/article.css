@@ -24,7 +24,7 @@
   width: 100%;
   filter: brightness(0.5);
   position: absolute;
-  z-index: 5;
+  z-index: 0;
 }
 
 .article__hero .article__container {
@@ -39,15 +39,15 @@
 
 .article__content .article__container {
   margin: 0 auto;
-  padding: 2em 0 4em;
+  padding: var(--space-l) 0 calc(var(--space-l) * 2);
 }
 
 .richtext + .article__author {
-  margin-top: 1em;
+  margin-top: var(--space-s);
 }
 
 .article__author-list {
-  padding-top: 1em;
+  padding-top: var(--space-s);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,12 +56,12 @@
 .article__author {
   display: inline-block;
   max-width: 270px;
-  padding: 1em;
+  padding: var(--space-s);
   font-size: 15px;
 }
 
 .article__author + .article__author {
-  margin-left: 1em;
+  margin-left: var(--space-s);
   margin-top: 0;
 }
 
@@ -95,7 +95,7 @@
 
 .article__preview {
   margin: 0 auto;
-  padding: 2em;
+  padding: var(--space-m);
 }
 
 .article__preview + .article__preview {
@@ -113,7 +113,7 @@
 }
 
 .article__preview img + .article__author-name {
-  margin-left: 0.5em;
+  margin-left: var(--space-xs);
 }
 
 a.article__link {
@@ -126,7 +126,7 @@ a.article__link {
 }
 
 .article__meta {
-  margin-bottom: 1em;
+  margin-bottom: var(--space-s);
 }
 
 .article__thumbnail {
@@ -160,7 +160,7 @@ a.article__link {
   }
 
   .article__author-list .article__author + .article__author {
-    margin-top: 1em;
+    margin-top: var(--space-s);
     margin-left: 0;
   }
 }

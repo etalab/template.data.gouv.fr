@@ -1,13 +1,9 @@
-:root {
-  --row-margin: 2em;
-}
-
 .row {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin-left: -var(--row-margin);
-  margin-right: -2em;
+  margin-left: -var(--space-s);
+  margin-right: -var(--space-s);
   flex-direction: row;
 }
 
@@ -16,7 +12,7 @@
 }
 
 .row > * {
-  margin: 0 var(--row-margin);
+  margin: 0 var(--space-s);
 }
 
 @media (--smaller-than-tablet) {
@@ -25,15 +21,15 @@
   }
 
   .row > * {
-    margin: 1em;
+    margin: var(--space-s);
   }
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
-  margin-top: 1em;
+  grid-gap: var(--space-s);
+  margin-top: var(--space-s);
   justify-items: center;
   justify-content: space-evenly;
 }

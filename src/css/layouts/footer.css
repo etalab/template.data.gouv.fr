@@ -1,7 +1,7 @@
 .footer {
   background: var(--darkest-grey);
   color: var(--white);
-  padding: 2em 0;
+  padding: var(--space-l) 0;
 }
 
 .footer .container {
@@ -16,12 +16,12 @@
 }
 
 .footer__social {
-  margin-top: 1em;
+  margin-top: var(--space-s);
 }
 
 .footer__social li {
   display: inline;
-  margin-right: 1em;
+  margin-right: var(--space-s);
 }
 
 .footer__social .icon {
@@ -32,12 +32,12 @@
 
 .footer__links {
   margin: 0;
-  line-height: 2em;
+  line-height: var(--space-l);
 }
 
 .footer__links h2 {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: var(--space-xs);
 }
 
 .footer__links a {

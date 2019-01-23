@@ -2,7 +2,7 @@
   background: var(--theme-info-bg);
   border: 1px solid var(--theme-info-border);
   border-radius: var(--theme-border-radius);
-  padding: 1em;
+  padding: var(--space-s);
   margin-bottom: 1em;
   position: relative;
 }
@@ -12,7 +12,7 @@
   background: 0;
   color: currentColor;
   position: absolute;
-  right: 1em;
+  right: var(--space-s);
 }
 
 .notification .icon {
@@ -22,7 +22,7 @@
 }
 
 .notification.closable {
-  padding-right: 3em;
+  padding-right: var(--space-xl);
 }
 
 .notification.full-width {

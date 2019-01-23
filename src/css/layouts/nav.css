@@ -15,7 +15,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 1em;
+  padding: var(--space-s);
 }
 
 .navbar__home {
@@ -94,6 +94,6 @@ span.navbar__domain {
   }
 
   .nav__links {
-    padding-top: 1em;
+    padding-top: var(--space-s);
   }
 }

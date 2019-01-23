@@ -18,10 +18,6 @@
   max-width: none;
 }
 
-.container h1:first-child {
-  margin-top: 0;
-}
-
 .article__container {
   max-width: 35em;
 }

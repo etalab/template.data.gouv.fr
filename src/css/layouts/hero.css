@@ -10,11 +10,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2em;
+  padding: var(--space-l);
 }
 
 .hero__white-background {
-  padding: 10px 1em;
+  padding: 10px var(--space-s);
   background-color: white;
 }
 
@@ -24,7 +24,7 @@ h1.hero__white-background {
 }
 
 .hero p {
-  margin: 1em auto;
+  margin: var(--space-s) auto;
   color: var(--theme-dark-text);
   font-size: 1.2em;
 }
