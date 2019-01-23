@@ -190,15 +190,24 @@ button {
 }
 
 a,
-a:hover,
 a:focus,
 a:visited,
 a:active {
   text-decoration: underline;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
   color: #0053b3;
   color: var(--theme-primary);
+}
+
+a:hover {
+  border-radius: 3px;
+  border-radius: var(--theme-border-radius);
+  color: #003b80;
+  color: var(--dark-blue);
+  background-color: #ebeff3;
+  background-color: var(--lighter-grey);
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 small {
@@ -659,6 +668,7 @@ a.button.secondary {
 .label--inactive a {
   color: #53657d;
   color: var(--darker-grey);
+  background: 0;
 }
 
 /* recurring components */
@@ -1531,11 +1541,6 @@ a.article__link {
   text-decoration: none;
 }
 
-a.article__link:hover {
-  color: #0053b3;
-  color: var(--theme-primary);
-}
-
 .article__title {
   margin-bottom: 0;
 }
@@ -1710,8 +1715,9 @@ a.article__link:hover {
 }
 
 .side-pane li:hover .side-pane__link {
-  background: #c9d3df;
-  background: var(--light-grey);
+  background: #ebeff3;
+  background: var(--lighter-grey);
+  text-decoration: none;
 }
 
 .side-pane li.active .side-pane__link {
@@ -1728,8 +1734,8 @@ a.article__link:hover {
 }
 
 .side-pane li.side-pane__dropdown:hover .side-pane__link {
-  background: #c9d3df url("../images/icons/external/arrow-right.svg") no-repeat;
-  background: var(--light-grey) url("../images/icons/external/arrow-right.svg") no-repeat;
+  background: #ebeff3 url("../images/icons/external/arrow-right.svg") no-repeat;
+  background: var(--lighter-grey) url("../images/icons/external/arrow-right.svg") no-repeat;
   background-position: center right 1em;
   background-size: 15px 15px;
 }
@@ -1775,8 +1781,9 @@ a.article__link:hover {
 .side-pane__submenu .side-pane__sublink:hover {
   color: #26353f;
   color: var(--theme-dark-text);
-  background: #c9d3df;
-  background: var(--light-grey);
+  background: #ebeff3;
+  background: var(--lighter-grey);
+  text-decoration: none;
 }
 
 .side-pane__submenu li.active {
