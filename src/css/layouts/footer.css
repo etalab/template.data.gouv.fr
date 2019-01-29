@@ -4,6 +4,10 @@
   padding: var(--space-l) 0;
 }
 
+.footer a:hover {
+  background: 0;
+}
+
 .footer .container {
   display: flex;
   flex-flow: row wrap;
@@ -43,6 +47,10 @@
 .footer__links a {
   color: var(--white);
   text-decoration: none;
+}
+
+.footer__links a:hover {
+  background: var(--darker-grey);
 }
 
 .footer__logo {

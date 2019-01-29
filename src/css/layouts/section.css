@@ -38,6 +38,7 @@
 .section-dark a,
 .section-color a {
   color: currentColor;
+  background: var(--darker-grey);
 }
 
 .section__title + .row,
