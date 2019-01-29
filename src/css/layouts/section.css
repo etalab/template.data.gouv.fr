@@ -38,6 +38,10 @@
 .section-dark a,
 .section-color a {
   color: currentColor;
+}
+
+.section-dark a:hover,
+.section-color a:hover {
   background: var(--darker-grey);
 }
 
