@@ -1452,6 +1452,10 @@ h1.hero__white-background {
 .section-dark a,
 .section-color a {
   color: currentColor;
+}
+
+.section-dark a:hover,
+.section-color a:hover {
   background: #53657d;
   background: var(--darker-grey);
 }
