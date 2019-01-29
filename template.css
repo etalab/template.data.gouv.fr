@@ -1325,6 +1325,10 @@ h1.hero__white-background {
   padding: var(--space-l) 0;
 }
 
+.footer a:hover {
+  background: 0;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1377,6 +1381,11 @@ h1.hero__white-background {
   color: #fff;
   color: var(--white);
   text-decoration: none;
+}
+
+.footer__links a:hover {
+  background: #53657d;
+  background: var(--darker-grey);
 }
 
 .footer__logo {
@@ -1443,6 +1452,8 @@ h1.hero__white-background {
 .section-dark a,
 .section-color a {
   color: currentColor;
+  background: #53657d;
+  background: var(--darker-grey);
 }
 
 .section__title + .row,
