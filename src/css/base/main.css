@@ -33,7 +33,6 @@ a:hover {
   color: var(--dark-blue);
   background-color: var(--lighter-grey);
   text-decoration: none;
-  transition: all 0.2s ease-in;
 }
 
 small {
