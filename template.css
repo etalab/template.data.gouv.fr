@@ -234,8 +234,6 @@ a:hover {
   background-color: #ebeff3;
   background-color: var(--lighter-grey);
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
 }
 
 small {
