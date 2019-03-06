@@ -115,3 +115,10 @@ select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
+
+label.required::after {
+  content: '✱';
+  color: var(--red);
+  font-weight: 700;
+  margin-left: var(--space-xs);
+}

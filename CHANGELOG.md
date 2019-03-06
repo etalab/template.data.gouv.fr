@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.2.1
+
+#### Enhancements
+
+- Added a `required` class to `labels` to inform about _required_ fields
+
 ## v1.2.0 (23/01/2019)
 
 #### Enhancements
