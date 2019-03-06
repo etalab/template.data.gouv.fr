@@ -6,6 +6,9 @@
 
 - Added a `required` class to `labels` to inform about _required_ fields
 
+#### Bug fixes
+- Added a polyfill for Internet Explorer support
+
 ## v1.2.0 (23/01/2019)
 
 #### Enhancements

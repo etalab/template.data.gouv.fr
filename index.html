@@ -9,7 +9,12 @@
   <title>Tagline libérer les données sans effort et sur data.gouv.fr - template.data.gouv.fr</title>
 
   <link rel="stylesheet" href="template.css">
-
+  <script type="text/javascript">
+    if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+      document.write('<script src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"><\/script>');
+      document.write('<script src="https://unpkg.com/url-polyfill@1.0.14/url-polyfill.js"><\/script>');
+    }
+  </script>
   <!-- Search Engine -->
   <meta name="description" content="Tagline libérer les données sans effort et sur data.gouv.fr">
   <meta name="image" content="https://etalab.github.io/template.data.gouv.fr/images/preview.png">
