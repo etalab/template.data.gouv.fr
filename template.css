@@ -396,6 +396,15 @@ select:-moz-focusring {
   text-shadow: 0 0 0 #000;
 }
 
+label.required::after {
+  content: '✱';
+  color: #d63626;
+  color: var(--red);
+  font-weight: 700;
+  margin-left: 0.5em;
+  margin-left: var(--space-xs);
+}
+
 a.button,
 a.button:focus,
 a.button:active,
