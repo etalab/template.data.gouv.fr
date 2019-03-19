@@ -250,7 +250,7 @@ textarea,
 select {
   width: 100%;
   outline: none;
-  padding: 8px 14px;
+  padding: 0.5em 0.875em;
   font: inherit;
   line-height: 1.6;
   color: #1c1c1c;
@@ -282,13 +282,14 @@ select:disabled {
 
 input[type=radio],
 input[type=checkbox] {
-  margin-right: 6px;
-  margin-top: 0;
+  margin: 0;
+  margin-right: 0.5em;
+  margin-right: var(--space-xs);
 }
 
 input[type=radio] {
-  height: 20px;
-  width: 20px;
+  height: 1.25em;
+  width: 1.25em;
   border-radius: 50%;
   display: inline-block;
   -webkit-appearance: none;
@@ -303,10 +304,10 @@ input[type=radio]::before {
   border-color: var(--theme-primary);
   border-radius: 50%;
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 8px;
-  height: 8px;
+  top: 0.35em;
+  left: 0.3em;
+  width: 0.5em;
+  height: 0.5em;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -334,8 +335,8 @@ input[type="checkbox"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  height: 22px;
-  width: 22px;
+  height: 1.4em;
+  width: 1.5em;
   padding: 0;
 }
 
@@ -354,10 +355,10 @@ input[type="checkbox"]::before {
           transform: scale(0);
   content: '';
   position: absolute;
-  top: 3px;
-  left: 3px;
-  height: 14px;
-  width: 14px;
+  top: 0.2em;
+  left: 0.15em;
+  height: 1em;
+  width: 1em;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path d="M14.23 1.304L6.112 9.501 2.767 6.117a1.029 1.029 0 0 0-1.464 0 1.054 1.054 0 0 0 0 1.479l4.055 4.101c.208.21.481.31.754.305.272.005.545-.095.753-.305l8.829-8.915a1.053 1.053 0 0 0 0-1.478 1.027 1.027 0 0 0-1.464 0z" fill="white" /></svg>') center center no-repeat;
 }
 
@@ -379,9 +380,9 @@ select {
           appearance: none;
   background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path d="M1.254 2.518a.904.904 0 0 1 0-1.257.85.85 0 0 1 1.225 0l4.512 4.632 4.511-4.632a.85.85 0 0 1 1.225 0 .904.904 0 0 1 0 1.257L7.621 7.761a.848.848 0 0 1-.63.259.849.849 0 0 1-.631-.259L1.254 2.518z" fill="gray"/></svg>') no-repeat;
   background: var(--theme-background-white) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path d="M1.254 2.518a.904.904 0 0 1 0-1.257.85.85 0 0 1 1.225 0l4.512 4.632 4.511-4.632a.85.85 0 0 1 1.225 0 .904.904 0 0 1 0 1.257L7.621 7.761a.848.848 0 0 1-.63.259.849.849 0 0 1-.631-.259L1.254 2.518z" fill="gray"/></svg>') no-repeat;
-  background-position: top 1em right 1em;
-  background-size: 15px;
-  padding-right: 45px;
+  background-position: top 1em right 0;
+  background-size: 1.7em;
+  padding-right: 2.8em;
   border-radius: 3px;
   border-radius: var(--theme-border-radius);
   width: auto;
