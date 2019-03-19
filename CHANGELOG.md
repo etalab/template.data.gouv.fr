@@ -5,9 +5,12 @@
 #### Enhancements
 
 - Added a `required` class to `labels` to inform about _required_ fields
+- Change padding unit on inputs
 
 #### Bug fixes
+
 - Added a polyfill for Internet Explorer support
+- Fixed visual glitch on select arrow
 
 ## v1.2.0 (23/01/2019)
 
