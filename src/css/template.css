@@ -4,7 +4,7 @@
   background: linear-gradient(to right, #c969a6 0%, #e795a8 15%, #a4cfcd 43%, #45adc5 65%, #265c9f 100%);
 }
 
-.typography__sample + .typography__sample {
+.typography__sample {
   margin-top: var(--space-l);
 }
 
@@ -19,6 +19,10 @@
 
 .text-quote {
   display: block;
+}
+
+.panel + * {
+  margin-top: var(--space-m);
 }
 
 .color-panel {
@@ -173,4 +177,8 @@
 .dark-background {
   background-color: var(--darker-grey);
   padding: var(--space-s);
+}
+
+form {
+  margin-top: var(--space-l);
 }

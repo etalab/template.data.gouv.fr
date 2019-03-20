@@ -7,14 +7,6 @@
   border: 1px solid var(--theme-border-lighter);
 }
 
-.panel + * {
-  margin-top: var(--space-m);
-}
-
-.panel > :first-child {
-  margin-top: 0;
-}
-
 .panel > :last-child {
   margin-bottom: 0;
 }
@@ -31,9 +23,6 @@
 
 .panel__header h3 {
   display: inline-block;
-}
-
-.panel__header h3:first-of-type {
   margin: 0;
 }
 

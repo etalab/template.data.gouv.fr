@@ -6,6 +6,7 @@
 
 - Added a `required` class to `labels` to inform about _required_ fields
 - Change padding unit on inputs
+- Reworked the way cards and panels are spaced
 
 #### Bug fixes
 

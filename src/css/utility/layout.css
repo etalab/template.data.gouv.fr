@@ -11,8 +11,8 @@
   max-width: 50em;
 }
 
-.row > * {
-  margin: 0 var(--space-s);
+.row > * + * {
+  margin-left: var(--space-m);
 }
 
 @media (--smaller-than-tablet) {
@@ -20,8 +20,9 @@
     flex-direction: column;
   }
 
-  .row > * {
-    margin: var(--space-s);
+  .row > * + * {
+    margin-left: 0;
+    margin-top: var(--space-m);
   }
 }
 
