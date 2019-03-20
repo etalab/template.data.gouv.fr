@@ -20,6 +20,7 @@
 @import "components/dropdown.css";
 @import "components/modal.css";
 @import "components/notification.css";
+@import "components/tile.css";
 
 /* larger components */
 @import "layouts/container.css";

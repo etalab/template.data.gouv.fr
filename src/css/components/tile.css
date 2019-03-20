@@ -1,0 +1,28 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme-background-white);
+  width: 100%;
+  padding: var(--space-s);
+  transform: none;
+  transition: all 0.1s ease-in;
+}
+
+.tile:hover {
+  transform: scale(1.03);
+}
+
+.tile-colored {
+  background-color: var(--theme-background-color);
+  color: var(--theme-light-text);
+}
+
+.tile h3 {
+  margin: 0;
+}
+
+.tile__icon {
+  height: var(--space-l);
+}

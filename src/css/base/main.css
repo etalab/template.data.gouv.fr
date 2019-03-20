@@ -39,6 +39,21 @@ small {
   font-size: 0.875em;
 }
 
-.modals .button {
-  margin: auto;
+hr {
+  border-top: 0;
+  border-bottom: var(--theme-border-lighter);
+  margin: var(--space-l) 0;
+}
+
+dt {
+  display: block;
+  color: var(--darker-grey);
+}
+
+dd {
+  margin: 0;
+}
+
+dd + dt {
+  margin-top: var(--space-xs);
 }

@@ -2,6 +2,10 @@
 
 ## v1.2.1
 
+#### Features
+
+- Added tile element
+
 #### Enhancements
 
 - Added a `required` class to `labels` to inform about _required_ fields
@@ -9,6 +13,7 @@
 - Reworked the way cards and panels are spaced
 - Removed `.form__container`; use `.container__small` instead
 - Removed box shadow from buttons
+- Styled hr and dl/dt/dd elements
 
 #### Bug fixes
 
@@ -19,11 +24,12 @@
 
 #### Enhancements
 
-- Add a changelog!
+- Added a changelog!
 - Rework file structure for easier deployment
 - Simplify documentation navigation
 - Improve margins and paddings consistency
 - Improve links for better accessibility 
 
 #### Bug fixes
+
 - Fixed path to fonts and images
