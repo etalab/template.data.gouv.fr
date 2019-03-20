@@ -159,9 +159,13 @@
   }
 }
 
-.dashboard,
-.cards {
+.dashboard {
   border-top: 1px solid var(--theme-border);
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.cards {
+  margin-top: var(--space-xl);
 }
 
 .form__group + .button {

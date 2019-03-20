@@ -42,10 +42,6 @@
   margin-top: 0;
 }
 
-.dashboard table {
-  box-shadow: none;
-}
-
 @media (--smaller-than-tablet) {
   .dashboard {
     flex-direction: column;
