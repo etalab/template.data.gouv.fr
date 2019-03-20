@@ -241,8 +241,27 @@ small {
   font-size: 0.875em;
 }
 
-.modals .button {
-  margin: auto;
+hr {
+  border-top: 0;
+  border-bottom: #c9d3df;
+  border-bottom: var(--theme-border-lighter);
+  margin: 2em 0;
+  margin: var(--space-l) 0;
+}
+
+dt {
+  display: block;
+  color: #53657d;
+  color: var(--darker-grey);
+}
+
+dd {
+  margin: 0;
+}
+
+dd + dt {
+  margin-top: 0.5em;
+  margin-top: var(--space-xs);
 }
 
 /* basic elements */
@@ -1098,6 +1117,52 @@ fieldset {
   background: var(--theme-error-bg);
   border-color: #d63626;
   border-color: var(--theme-error-border);
+}
+
+.tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  background-color: var(--theme-background-white);
+  width: 100%;
+  padding: 1em;
+  padding: var(--space-s);
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.tile:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.tile-colored {
+  background-color: #003b80;
+  background-color: var(--theme-background-color);
+  color: #fff;
+  color: var(--theme-light-text);
+}
+
+.tile h3 {
+  margin: 0;
+}
+
+.tile__icon {
+  height: 2em;
+  height: var(--space-l);
 }
 
 /* larger components */
