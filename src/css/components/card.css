@@ -11,8 +11,8 @@
   border: 1px solid var(--theme-border-lighter);
 }
 
-.row .card {
-  margin: 0 1em;
+.row .card + .card {
+  margin-left: var(--space-m);
 }
 
 @media (--smaller-than-tablet) {
@@ -21,7 +21,8 @@
   }
 
   .row > .card + .card {
-    margin-top: 2em;
+    margin-left: 0;
+    margin-top: var(--space-m);
   }
 }
 
@@ -30,6 +31,10 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-background-color);
 }
 
 .card__cover img {

@@ -6,6 +6,9 @@
 
 - Added a `required` class to `labels` to inform about _required_ fields
 - Change padding unit on inputs
+- Reworked the way cards and panels are spaced
+- Removed `.form__container`; use `.container__small` instead
+- Removed box shadow from buttons
 
 #### Bug fixes
 
