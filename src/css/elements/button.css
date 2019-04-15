@@ -141,6 +141,16 @@ a.button.warning {
   background-color: var(--dark-red);
 }
 
+.button.warning-orange,
+a.button.warning-orange {
+  background-color: var(--orange);
+}
+
+.button.warning-orange:hover,
+.button.warning-orange:active {
+  background-color: var(--dark-orange);
+}
+
 .button.secondary,
 a.button.secondary {
   background-color: var(--darker-grey);
