@@ -141,13 +141,13 @@ a.button.warning {
   background-color: var(--dark-red);
 }
 
-.button.warning-orange,
-a.button.warning-orange {
+.button.warning-light,
+a.button.warning-light {
   background-color: var(--orange);
 }
 
-.button.warning-orange:hover,
-.button.warning-orange:active {
+.button.warning-light:hover,
+.button.warning-light:active {
   background-color: var(--dark-orange);
 }
 
