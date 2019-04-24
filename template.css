@@ -49,6 +49,7 @@
   --green: #03bd5b;
   --light-green: #daf5e7;
   --orange: #ff9947;
+  --dark-orange: #cc5c00;
   --light-orange: #fff0e4;
   --red: #d63626;
   --dark-red: #ab2b1e;
@@ -595,6 +596,18 @@ a.button.warning {
 .button.warning:active {
   background-color: #ab2b1e;
   background-color: var(--dark-red);
+}
+
+.button.warning-light,
+a.button.warning-light {
+  background-color: #ff9947;
+  background-color: var(--orange);
+}
+
+.button.warning-light:hover,
+.button.warning-light:active {
+  background-color: #cc5c00;
+  background-color: var(--dark-orange);
 }
 
 .button.secondary,
