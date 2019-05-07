@@ -75,3 +75,32 @@ fieldset {
   flex-shrink: 0;
   margin-left: var(--space-s);
 }
+
+.form__choice {
+    display: inline;
+    position: relative;
+    padding-left: 2em;
+}
+
+.form__choice.stacked {
+    display: block;
+}
+
+.form__choice label {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.form__choice input[type="checkbox"],
+.form__choice input[type="radio"] {
+    position: absolute;
+    left: 0;
+}
+
+.form__choice input[type="checkbox"] {
+        top: -0.0625em;
+}
+
+.form__choice input[type="radio"] {
+        top: 0.03125em;
+}
