@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.2.2
+
+#### Enhancements
+
+- Added a new color to buttons
+- `input[type="submit"]` now has the same default width and a pointer on hover
+- Checkboxes and radio buttons options now have a larger margins between them
+- Selects on Firefox are the same height as other inputs
+- Required marker is now set on the left of labels for better scanning
+
 ## v1.2.1 (20/03/2019)
 
 #### Features
