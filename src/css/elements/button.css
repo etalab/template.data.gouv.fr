@@ -26,6 +26,8 @@ input[type="button"]:visited {
   top: 0;
   overflow: hidden;
   text-decoration: none;
+  cursor: pointer;
+  width: auto;
 }
 
 a.button:hover,
