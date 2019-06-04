@@ -107,6 +107,13 @@ select {
   width: auto;
 }
 
+@-moz-document url-prefix() {
+  select {
+    padding-top: 0.438em;
+    padding-bottom: 0.438em;
+  }
+}
+
 select:focus {
   outline: none;
 }
