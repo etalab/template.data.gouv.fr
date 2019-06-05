@@ -6,8 +6,11 @@ form {
 label,
 legend {
   display: block;
-  margin-bottom: var(--space-xs);
   color: var(--theme-dark-text);
+}
+
+legend {
+  margin-bottom: var(--space-xs);
 }
 
 label.label-inline {
@@ -17,7 +20,8 @@ label.label-inline {
 
 .label-inline + input[type=radio],
 .label-inline + input[type=checkbox] {
-  margin-left: var(--space-xs);
+  margin-left: var(--space-m);
+  flex-shrink: 0;
 }
 
 .form__group {
@@ -34,16 +38,18 @@ fieldset {
   margin: 0;
   padding: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .overlay-button {
   position: absolute;
   right: var(--space-l);
-  top: 1.25em;
+  top: calc(1px + 0.8rem);
   background: 0;
   border: 0;
-  width: 15px;
-  height: 15px;
+  width: 1rem;
+  height: 1rem;
 }
 
 .search__group {
