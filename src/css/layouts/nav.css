@@ -1,7 +1,6 @@
 .navbar {
-  border-bottom: 1px solid var(--theme-border-lighter);
   width: 100%;
-  background: var(--white);
+  background: var(--theme-background-white);
   z-index: 100;
 }
 
