@@ -1,11 +1,14 @@
 .hero {
   width: 100%;
-  color: #fff;
-  background: var(--theme-primary);
+  background: var(--theme-background-white);
+}
+
+.hero-color {
+  background: var(--theme-background-color);
 }
 
 .hero__container {
-  min-height: 38vh;
+  min-height: 25em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,18 +18,20 @@
   margin: 0 auto;
 }
 
-.hero__white-background {
-  padding: 10px var(--space-s);
-  background-color: white;
+.hero h1 {
+  margin-bottom: 0;
 }
 
-h1.hero__white-background {
-  color: var(--theme-dark-text);
-  margin: 0;
+.hero-color h1 {
+  color: var(--theme-light-text);
 }
 
 .hero p {
   margin: var(--space-s) auto;
   color: var(--theme-dark-text);
   font-size: 1.2em;
+}
+
+.hero-color p {
+  color: var(--theme-light-text);
 }
