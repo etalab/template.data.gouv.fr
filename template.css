@@ -945,6 +945,11 @@ fieldset {
   border: 1px solid var(--theme-border-lighter);
 }
 
+.panel + * {
+  margin-top: 1.5em;
+  margin-top: var(--space-m);
+}
+
 .panel > :last-child {
   margin-bottom: 0;
 }
@@ -2103,6 +2108,7 @@ a.article__link {
 .row > * + * {
   margin-left: 1.5em;
   margin-left: var(--space-m);
+  margin-top: 0;
 }
 
 @media (max-width: 749px) {
@@ -2160,11 +2166,6 @@ a.article__link {
 
 .text-quote {
   display: block;
-}
-
-.panel + * {
-  margin-top: 1.5em;
-  margin-top: var(--space-m);
 }
 
 .color-panel {
