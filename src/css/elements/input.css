@@ -107,6 +107,13 @@ select {
   width: auto;
 }
 
+@-moz-document url-prefix() {
+  select {
+    padding-top: 0.438em;
+    padding-bottom: 0.438em;
+  }
+}
+
 select:focus {
   outline: none;
 }
@@ -116,9 +123,12 @@ select:-moz-focusring {
   text-shadow: 0 0 0 #000;
 }
 
-label.required::after {
+label.required::before {
   content: '✱';
   color: var(--red);
   font-weight: 700;
-  margin-left: var(--space-xs);
+  padding-right: var(--space-xs);
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
 }
