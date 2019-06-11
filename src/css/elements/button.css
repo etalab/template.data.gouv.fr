@@ -167,3 +167,18 @@ a.button.secondary {
 .button-outline + .button-outline {
   margin-left: 1em;
 }
+
+@media (--smaller-than-mobile) {
+  a.button,
+  button.button,
+  input[type="submit"],
+  input[type="button"] {
+    width: 100%;
+  }
+
+  .button + .button,
+  .button-outline + .button-outline {
+    margin-top: 1em;
+    margin-left: 0;
+  }
+}
