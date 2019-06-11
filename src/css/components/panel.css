@@ -7,6 +7,10 @@
   border: 1px solid var(--theme-border-lighter);
 }
 
+.panel + * {
+  margin-top: var(--space-m);
+}
+
 .panel > :last-child {
   margin-bottom: 0;
 }
