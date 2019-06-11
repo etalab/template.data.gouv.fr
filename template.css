@@ -409,6 +409,13 @@ select {
   width: auto;
 }
 
+@-moz-document url-prefix() {
+  select {
+    padding-top: 0.438em;
+    padding-bottom: 0.438em;
+  }
+}
+
 select:focus {
   outline: none;
 }
@@ -418,13 +425,17 @@ select:-moz-focusring {
   text-shadow: 0 0 0 #000;
 }
 
-label.required::after {
+label.required::before {
   content: '✱';
   color: #d63626;
   color: var(--red);
   font-weight: 700;
-  margin-left: 0.5em;
-  margin-left: var(--space-xs);
+  padding-right: 0.5em;
+  padding-right: var(--space-xs);
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 a.button,
@@ -460,6 +471,8 @@ input[type="button"]:visited {
   top: 0;
   overflow: hidden;
   text-decoration: none;
+  cursor: pointer;
+  width: auto;
 }
 
 a.button:hover,
