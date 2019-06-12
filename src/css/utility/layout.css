@@ -13,7 +13,6 @@
 
 .row > * + * {
   margin-left: var(--space-m);
-  margin-top: 0;
 }
 
 @media (--smaller-than-tablet) {
