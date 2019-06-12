@@ -589,10 +589,11 @@
         </div>
         <div class="panel">
           <h3>Dota 2 hero classification</h3>
+          <input type="text" class="table__filter" placeholder="Filtrer le tableau" />
           <table class="table">
             <thead>
-              <th>Force</th>
-              <th>Agility</th>
+              <th class="ascending">Force</th>
+              <th class="descending">Agility</th>
               <th>Intelligence</th>
             </thead>
             <tbody>
@@ -613,42 +614,42 @@
               </tr>
             </tbody>
           </table>
+          <nav class="pagination">
+            <div class="pagination__display-group">
+              <label for="pagination__display" class="pagination__display-label">Rows per page</label>
+              <select class="pagination__display" id="pagination__display">
+                <option>5</option>
+                <option>10</option>
+                <option>50</option>
+                <option>100</option>
+              </select>
+            </div>
+            <div class="pagination__count"><strong>3</strong> sur <strong>112</strong></div>
+            <ul class="pagination__pages">
+              <li class="disabled">
+                <a>❮ Précédent</a>
+              </li>
+              <li class="active">
+                <a>1</a>
+              </li>
+              <li>
+                <a>2</a>
+              </li>
+              <li>
+                <a>3</a>
+              </li>
+              <li>
+                <a>4</a>
+              </li>
+              <li class="disabled">
+                <a>5</a>
+              </li>
+              <li>
+                <a>Suivant ❯</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="pagination">
-          <div class="pagination__display-group">
-            <label for="pagination__display" class="pagination__display-label">Rows per page</label>
-            <select class="pagination__display" id="pagination__display">
-              <option>5</option>
-              <option>10</option>
-              <option>50</option>
-              <option>100</option>
-            </select>
-          </div>
-          <div class="pagination__count"><strong>3</strong> sur <strong>112</strong></div>
-          <ul class="pagination__pages">
-            <li class="disabled">
-              <a>❮ Précédent</a>
-            </li>
-            <li class="active">
-              <a>1</a>
-            </li>
-            <li>
-              <a>2</a>
-            </li>
-            <li>
-              <a>3</a>
-            </li>
-            <li>
-              <a>4</a>
-            </li>
-            <li class="disabled">
-              <a>5</a>
-            </li>
-            <li>
-              <a>Suivant ❯</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
 

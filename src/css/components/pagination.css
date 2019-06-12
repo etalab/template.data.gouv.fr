@@ -4,6 +4,7 @@
   justify-content: end;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: var(--space-m);
 }
 
 .pagination__display-group {

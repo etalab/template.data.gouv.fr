@@ -27,6 +27,24 @@
   text-transform: uppercase;
 }
 
+.table thead th.ascending::after {
+  font-size: 0.75em;
+  content: '▲';
+  margin-left: var(--space-xs);
+}
+
+.table thead th.descending::after {
+  font-size: 0.75em;
+  content: '▼';
+  margin-left: var(--space-xs);
+}
+
 .table tr:hover {
   background: var(--lightest-grey);
+}
+
+.table__filter {
+  margin-bottom: var(--space-s);
+  max-width: 20em;
+  float: right;
 }

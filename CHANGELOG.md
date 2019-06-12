@@ -5,6 +5,7 @@
 #### Features
 
 - Added a pagination element
+- Added filter and sort to table
 
 #### Enhancements
 
