@@ -81,3 +81,14 @@ fieldset {
   flex-shrink: 0;
   margin-left: var(--space-s);
 }
+
+@media (--smaller-than-mobile) {
+  .input__group {
+    flex-direction: column;
+  }
+
+  .input__group .button {
+    margin-left: 0;
+    margin-top: var(--space-s);
+  }
+}
