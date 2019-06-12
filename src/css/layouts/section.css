@@ -16,7 +16,12 @@
 }
 
 .section-color {
-  background-color: var(--theme-background-color);
+  background-image: var(--theme-background-gradient);
+  color: #fff;
+}
+
+.section-color-dark {
+  background-color: var(--theme-background-color-dark);
   color: #fff;
 }
 

@@ -75,6 +75,10 @@
   background: var(--dark-blue);
 }
 
+.color-panel__sample.primary-darker {
+  background: var(--darker-blue);
+}
+
 .color-panel__sample.white {
   background: var(--white);
   border: 1px solid var(--theme-border-lighter);
@@ -166,12 +170,11 @@
 
 .light-background {
   background-color: var(--white);
-  border: 1px solid var(--grey);
-  padding: var(--space-s);
+  padding: 0 var(--space-s);
 }
 
 .dark-background {
-  background-color: var(--darker-grey);
+  background-color: var(--darker-blue);
   padding: var(--space-s);
 }
 

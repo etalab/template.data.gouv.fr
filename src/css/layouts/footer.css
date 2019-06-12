@@ -1,5 +1,5 @@
 .footer {
-  background: var(--darkest-grey);
+  background: var(--theme-background-dark);
   color: var(--white);
   padding: var(--space-l) 0;
 }
