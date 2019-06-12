@@ -9,6 +9,18 @@
 - Checkboxes and radio buttons options now have a larger margins between them
 - Selects on Firefox are the same height as other inputs
 - Required marker is now set on the left of labels for better scanning
+- Hero is now white by default
+- Better handling of margins between buttons on small screens
+- Paragraph in hero is a bit bigger
+- Added a darker-blue color
+- Section color is now a gradient blue between blue and dark blue
+- Background blue is now back to default blue
+
+#### Bug fixes
+
+- Titles in article page are back to white
+- Titles have their top margin back but lose them if they are first child of an element
+
 
 ## v1.2.1 (20/03/2019)
 
@@ -38,7 +50,7 @@
 - Rework file structure for easier deployment
 - Simplify documentation navigation
 - Improve margins and paddings consistency
-- Improve links for better accessibility 
+- Improve links for better accessibility
 
 #### Bug fixes
 
