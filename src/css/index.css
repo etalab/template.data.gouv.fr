@@ -21,6 +21,7 @@
 @import "components/modal.css";
 @import "components/notification.css";
 @import "components/tile.css";
+@import "components/pagination.css";
 
 /* larger components */
 @import "layouts/container.css";

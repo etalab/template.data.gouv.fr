@@ -2,6 +2,10 @@
 
 ## v1.2.2
 
+#### Features
+
+- Added a pagination element
+
 #### Enhancements
 
 - Added a new color to buttons

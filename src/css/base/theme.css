@@ -35,6 +35,7 @@
   --desktop-min: 1000px;
 
   /* Spaces */
+  --space-xxs: 0.25em;
   --space-xs: 0.5em;
   --space-s: 1em;
   --space-m: 1.5em;
