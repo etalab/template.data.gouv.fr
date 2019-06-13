@@ -2,6 +2,11 @@
 
 ## v1.2.2
 
+#### Features
+
+- Added a pagination element
+- Added filter and sort to table
+
 #### Enhancements
 
 - Added a new color to buttons
@@ -16,7 +21,7 @@
 - Section color is now a gradient blue between blue and dark blue
 - Background blue is now back to default blue
 
-#### Bug fixes
+#### Bug fixes 
 
 - Titles in article page are back to white
 - Titles have their top margin back but lose them if they are first child of an element
