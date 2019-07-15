@@ -1,6 +1,6 @@
 # template.data.gouv.fr [![CircleCI](https://circleci.com/gh/etalab/template.data.gouv.fr.svg?style=svg)](https://circleci.com/gh/etalab/template.data.gouv.fr)
 
-Template CSS pour doc.data.gouv.fr et compagnie.
+Template CSS pour *.beta.gouv.fr, doc.data.gouv.fr et compagnie.
 
 [![npm version](https://badgen.net/npm/v/template.data.gouv.fr)](https://www.npmjs.com/package/template.data.gouv.fr)
 
