@@ -1,0 +1,93 @@
+.steps-form {
+  counter-reset: step;
+  display: flex;
+  flex-direction: row;
+}
+
+.steps-form li {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  list-style-type: none;
+  position: relative;
+  text-align: center;
+}
+
+.steps-form li::before {
+  font-size: 2em;
+  color: var(--light-grey);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  content: counter(step);
+  counter-increment: step;
+  border: 7px solid var(--light-grey);
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: block;
+  text-align: center;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.steps-form li.active::before,
+li.done::before {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.steps-form li.done::before {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.steps-form li::after {
+  width: 100%;
+  height: 15px;
+  content: '';
+  position: absolute;
+  background-color: var(--light-grey);
+  top: 23px;
+  left: -50%;
+  z-index: 0;
+}
+
+.steps-form li.active::after,
+li.done::after {
+  background-color: var(--blue);
+}
+
+.steps-form li:first-child::after {
+  content: none;
+}
+
+@media (--smaller-than-tablet) {
+  .steps-form {
+    flex-direction: column;
+    padding: 0 0 0 2vw;
+  }
+
+  .steps-form li {
+    flex-direction: row;
+  }
+
+  .steps-form > li > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .steps-form li::after {
+    width: 15px;
+    height: 100%;
+    left: 20px;
+    top: -50%;
+  }
+
+  .steps-form li::before {
+    flex-shrink: 0;
+    margin: 2vh 0 0;
+  }
+}
