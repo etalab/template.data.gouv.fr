@@ -86,7 +86,8 @@ a.button-outline.primary {
 }
 
 .button-outline.primary:hover,
-.button-outline.primary:active {
+.button-outline.primary:active,
+.button-outline.primary:focus {
   border-color: var(--dark-blue);
   color: var(--dark-blue);
 }
@@ -98,7 +99,8 @@ a.button-outline.warning {
 }
 
 .button-outline.warning:hover,
-.button-outline.warning:active {
+.button-outline.warning:active,
+.button-outline.warning:focus {
   border-color: var(--dark-red);
   color: var(--dark-red);
 }
@@ -110,7 +112,8 @@ a.button-outline.secondary {
 }
 
 .button-outline.secondary:hover,
-.button-outline.secondary:active {
+.button-outline.secondary:active,
+.button-outline.secondary:focus {
   border-color: var(--darkest-grey);
   color: var(--theme-dark-text);
 }
@@ -140,7 +143,8 @@ a.button.warning {
 }
 
 .button.warning:hover,
-.button.warning:active {
+.button.warning:active,
+.button.warning:focus {
   background-color: var(--dark-red);
 }
 
@@ -150,7 +154,8 @@ a.button.warning-light {
 }
 
 .button.warning-light:hover,
-.button.warning-light:active {
+.button.warning-light:active,
+.button.warning-light:focus {
   background-color: var(--dark-orange);
 }
 
@@ -160,7 +165,8 @@ a.button.secondary {
 }
 
 .button.secondary:hover,
-.button.secondary:active {
+.button.secondary:active,
+.button.secondary:focus {
   background-color: var(--darkest-grey);
 }
 
