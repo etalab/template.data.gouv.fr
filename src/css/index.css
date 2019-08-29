@@ -12,6 +12,7 @@
 @import "elements/table.css";
 @import "elements/icon.css";
 @import "elements/label.css";
+@import "elements/switch.css";
 
 /* recurring components */
 @import "components/form.css";
