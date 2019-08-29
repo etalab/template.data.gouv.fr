@@ -29,7 +29,7 @@ Installer le package sur votre projet
 
 Puis importer le fichier
 ```
-  import 'template.data.gouv.fr/dist/style/main.css'
+  import 'template.data.gouv.fr/dist/main.css'
 ```
 
 ## Utiliser la dernière version complète
