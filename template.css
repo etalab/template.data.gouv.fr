@@ -1451,6 +1451,133 @@ select.pagination__display {
   pointer-events: none;
 }
 
+.steps-form {
+  counter-reset: step;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.steps-form li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  position: relative;
+  text-align: center;
+}
+
+.steps-form li::before {
+  font-size: 2em;
+  color: #c9d3df;
+  color: var(--light-grey);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  content: counter(step);
+  counter-increment: step;
+  border: 7px solid #c9d3df;
+  border: 7px solid var(--light-grey);
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.steps-form li.active::before,
+li.done::before {
+  border-color: #0053b3;
+  border-color: var(--blue);
+  color: #0053b3;
+  color: var(--blue);
+}
+
+.steps-form li.done::before {
+  color: #fff;
+  color: var(--white);
+  background-color: #0053b3;
+  background-color: var(--blue);
+}
+
+.steps-form li::after {
+  width: 100%;
+  height: 15px;
+  content: '';
+  position: absolute;
+  background-color: #c9d3df;
+  background-color: var(--light-grey);
+  top: 23px;
+  left: -50%;
+  z-index: 0;
+}
+
+.steps-form li.active::after,
+li.done::after {
+  background-color: #0053b3;
+  background-color: var(--blue);
+}
+
+.steps-form li:first-child::after {
+  content: none;
+}
+
+@media (max-width: 749px) {
+  .steps-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 0 2vw;
+  }
+
+  .steps-form li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .steps-form > li > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 2vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+
+  .steps-form li::after {
+    width: 15px;
+    height: 100%;
+    left: 20px;
+    top: -50%;
+  }
+
+  .steps-form li::before {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin: 2vh 0 0;
+  }
+}
+
 /* larger components */
 .container {
   position: relative;
