@@ -1,0 +1,79 @@
+input[type="checkbox"].switch {
+  width: 2.5em;
+  border-radius: 1em;
+}
+
+input[type="checkbox"].switch::before {
+  transform: none;
+  transition: all ease-out 250ms;
+  top: 0.1em;
+  background: var(--blue);
+  border-radius: 1em;
+}
+
+input[type="checkbox"].switch:checked {
+  background-color: var(--lighter-blue);
+}
+
+input[type="checkbox"].switch:checked::before {
+  left: 1.2em;
+}
+
+input[type="checkbox"].switch:disabled {
+  background-color: var(--lighter-grey);
+}
+
+input[type="checkbox"].switch:disabled::before {
+  background-color: var(--darker-grey);
+}
+
+label.switch-text {
+  display: inline-block;
+  position: relative;
+  padding: 0 0.5em;
+}
+
+label.switch-text input[type="checkbox"].switch {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1.6em;
+}
+
+label.switch-text input[type="checkbox"].switch:checked {
+  background-color: var(--theme-background-white);
+}
+
+label.switch-text input[type="checkbox"].switch::before {
+  width: 50%;
+  height: 1.3em;
+}
+
+label.switch-text input[type="checkbox"].switch:checked::before {
+  left: calc(50% - 0.1em);
+}
+
+label.switch-text .switch-option {
+  display: inline;
+  position: relative;
+  padding-right: 0.5em;
+  transition: all ease-out 250ms;
+}
+
+label.switch-text .switch-option + .switch-option {
+  padding-right: 0;
+  padding-left: 0.5em;
+}
+
+label.switch-text input[type="checkbox"].switch:not(:checked) + .switch-option {
+  color: var(--white);
+}
+
+label.switch-text input[type="checkbox"].switch:checked ~ .switch-option {
+  color: var(--white);
+}
+
+label.switch-text input[type="checkbox"].switch:checked + .switch-option {
+  color: var(--black);
+}
