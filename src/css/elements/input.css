@@ -46,8 +46,8 @@ input[type=radio]::before {
   border-color: var(--theme-primary);
   border-radius: 50%;
   position: absolute;
-  top: 0.35em;
-  left: 0.3em;
+  top: 0.3em;
+  left: 0.35em;
   width: 0.5em;
   height: 0.5em;
   transform: scale(0);
