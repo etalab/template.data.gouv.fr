@@ -335,8 +335,8 @@ input[type=radio]::before {
   border-color: var(--theme-primary);
   border-radius: 50%;
   position: absolute;
-  top: 0.35em;
-  left: 0.3em;
+  top: 0.3em;
+  left: 0.35em;
   width: 0.5em;
   height: 0.5em;
   -webkit-transform: scale(0);
@@ -792,7 +792,7 @@ input[type="checkbox"].switch::before {
           transform: none;
   -webkit-transition: all ease-out 250ms;
   transition: all ease-out 250ms;
-  top: 0.1em;
+  top: 0.15em;
   background: #0053b3;
   background: var(--blue);
   border-radius: 1em;
@@ -820,7 +820,7 @@ input[type="checkbox"].switch:disabled::before {
 label.switch-text {
   display: inline-block;
   position: relative;
-  padding: 0 0.5em;
+  padding: 0 0.75em;
 }
 
 label.switch-text input[type="checkbox"].switch {
@@ -838,11 +838,12 @@ label.switch-text input[type="checkbox"].switch:checked {
 
 label.switch-text input[type="checkbox"].switch::before {
   width: 50%;
-  height: 1.3em;
+  height: 1.15em;
+  left: 0.2em;
 }
 
 label.switch-text input[type="checkbox"].switch:checked::before {
-  left: calc(50% - 0.1em);
+  left: calc(50% - 0.2em);
 }
 
 label.switch-text .switch-option {
@@ -920,12 +921,6 @@ fieldset {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .overlay-button {
