@@ -405,6 +405,12 @@ input[type="checkbox"]:checked::before {
   transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
+input[type="file"] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 select {
   -webkit-appearance: none;
      -moz-appearance: none;
