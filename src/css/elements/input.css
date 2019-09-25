@@ -97,6 +97,10 @@ input[type="checkbox"]:checked::before {
   transition: transform 0.2s ease-out;
 }
 
+input[type="file"] {
+  display: inline-flex;
+}
+
 select {
   appearance: none;
   background: var(--theme-background-white) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path d="M1.254 2.518a.904.904 0 0 1 0-1.257.85.85 0 0 1 1.225 0l4.512 4.632 4.511-4.632a.85.85 0 0 1 1.225 0 .904.904 0 0 1 0 1.257L7.621 7.761a.848.848 0 0 1-.63.259.849.849 0 0 1-.631-.259L1.254 2.518z" fill="gray"/></svg>') no-repeat;
