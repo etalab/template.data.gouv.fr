@@ -34,7 +34,6 @@ select.pagination__display {
   overflow: hidden;
   display: flex;
   justify-content: end;
-  margin: var(--space-xs);
 }
 
 .pagination__pages li a {
