@@ -28,7 +28,6 @@ input[type="button"]:visited {
   text-decoration: none;
   cursor: pointer;
   width: auto;
-  margin: 1em 1em 0 0;
 }
 
 a.button:hover,
