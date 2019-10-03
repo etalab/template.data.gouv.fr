@@ -2,7 +2,7 @@
 .pagination {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   margin-top: var(--space-m);
@@ -33,7 +33,7 @@ select.pagination__display {
   padding: 0;
   overflow: hidden;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-left: var(--space-m);
 }
 
