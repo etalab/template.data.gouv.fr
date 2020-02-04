@@ -76,7 +76,9 @@
   /* Theme */
   --theme-primary: var(--blue);
   --theme-primary-light: var(--light-blue);
+  --theme-primary-lighter: var(--lighter-blue);
   --theme-primary-dark: var(--dark-blue);
+  --theme-primary-darker: var(--darker-blue);
   --theme-secondary: var(--blue);
   --theme-secondary-darken: var(--dark-blue);
   --theme-border: var(--grey);
@@ -788,96 +790,143 @@ a.button.secondary {
   background: 0;
 }
 
-input[type="checkbox"].switch {
+label.switch {
+  position: relative;
+  display: inline-block;
+  padding-left: 2.6em;
+}
+
+label.switch input,
+label.switch-text input {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: 0;
+  display: none;
+}
+
+label.switch input[type="checkbox"]::before {
+  display: none;
+}
+
+label.switch .slider,
+label.switch-text .slider {
+  position: absolute;
+  cursor: pointer;
   width: 2.5em;
+  height: 1.4em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid #adb9c9;
+  border: 1px solid var(--theme-border);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 1em;
 }
 
-input[type="checkbox"].switch::before {
-  -webkit-transform: none;
-          transform: none;
-  -webkit-transition: all ease-out 250ms;
-  transition: all ease-out 250ms;
-  top: 0.15em;
-  background: #0053b3;
-  background: var(--blue);
+label.switch .slider::before,
+label.switch-text .slider::before {
+  position: absolute;
+  content: '';
+  height: 1em;
+  width: 1em;
   border-radius: 1em;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: #0053b3;
+  background-color: var(--theme-primary);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-input[type="checkbox"].switch:checked {
-  background-color: #b4e1fa;
-  background-color: var(--lighter-blue);
-}
-
-input[type="checkbox"].switch:checked::before {
-  left: 1.2em;
-}
-
-input[type="checkbox"].switch:disabled {
+label.switch input:disabled + .slider,
+label.switch-text input:disabled + .slider {
+  border: 1px solid #adb9c9;
+  border: 1px solid var(--theme-border);
   background-color: #ebeff3;
-  background-color: var(--lighter-grey);
+  background-color: var(--theme-background-grey);
 }
 
-input[type="checkbox"].switch:disabled::before {
-  background-color: #53657d;
-  background-color: var(--darker-grey);
+label.switch input:checked + .slider {
+  border-color: #0053b3;
+  border-color: var(--theme-primary);
+  background-color: #b4e1fa;
+  background-color: #b4e1fa;
+  background-color: var(--theme-primary-lighter);
+}
+
+label.switch input:focus + .slider {
+  border-color: #006be6;
+  border-color: var(--theme-border-active);
+  -webkit-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
+}
+
+label.switch input:disabled + .slider::before,
+label.switch-text input:disabled + .slider::before {
+  background-color: #1c1c1c;
+  background-color: var(--black);
+}
+
+label.switch input:checked + .slider::before {
+  -webkit-transform: translateX(1em);
+  transform: translateX(1em);
 }
 
 label.switch-text {
   display: inline-block;
+}
+
+label.switch-text .slider {
   position: relative;
-  padding: 0 0.75em;
+  width: auto;
+  height: auto;
+  padding: 0 0.4em;
 }
 
-label.switch-text input[type="checkbox"].switch {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1.6em;
+label.switch-text .slider::before {
+  display: inline-block;
+  height: 1.1em;
+  width: 48%;
+  bottom: 0.1em;
 }
 
-label.switch-text input[type="checkbox"].switch:checked {
-  background-color: #fff;
-  background-color: var(--theme-background-white);
+label.switch-text input:checked + .slider::before {
+  -webkit-transform: translateX(calc(100% - 0.2em));
+  transform: translateX(calc(100% - 0.2em));
 }
 
-label.switch-text input[type="checkbox"].switch::before {
-  width: 50%;
-  height: 1.15em;
-  left: 0.2em;
-}
-
-label.switch-text input[type="checkbox"].switch:checked::before {
-  left: calc(50% - 0.2em);
-}
-
-label.switch-text .switch-option {
-  display: inline;
+label.switch-text .first-option,
+label.switch-text .second-option {
   position: relative;
-  padding-right: 0.5em;
-  -webkit-transition: all ease-out 250ms;
-  transition: all ease-out 250ms;
-}
-
-label.switch-text .switch-option + .switch-option {
-  padding-right: 0;
-  padding-left: 0.5em;
-}
-
-label.switch-text input[type="checkbox"].switch:not(:checked) + .switch-option {
-  color: #fff;
-  color: var(--white);
-}
-
-label.switch-text input[type="checkbox"].switch:checked ~ .switch-option {
-  color: #fff;
-  color: var(--white);
-}
-
-label.switch-text input[type="checkbox"].switch:checked + .switch-option {
   color: #1c1c1c;
   color: var(--black);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+label.switch-text .second-option {
+  padding-left: 0.2em;
+}
+
+label.switch-text input + .slider .first-option {
+  color: #fff;
+  color: var(--white);
+}
+
+label.switch-text input:checked + .slider .first-option {
+  color: #1c1c1c;
+  color: var(--black);
+}
+
+label.switch-text input:checked + .slider .second-option {
+  color: #fff;
+  color: var(--white);
 }
 
 /* recurring components */
