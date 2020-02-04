@@ -45,7 +45,9 @@
   /* Theme */
   --theme-primary: var(--blue);
   --theme-primary-light: var(--light-blue);
+  --theme-primary-lighter: var(--lighter-blue);
   --theme-primary-dark: var(--dark-blue);
+  --theme-primary-darker: var(--darker-blue);
   --theme-secondary: var(--blue);
   --theme-secondary-darken: var(--dark-blue);
   --theme-border: var(--grey);
