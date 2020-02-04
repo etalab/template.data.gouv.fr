@@ -1450,9 +1450,9 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1463,8 +1463,8 @@ fieldset {
 }
 /* stylelint-enable declaration-block-no-redundant-longhand-properties */
 .pagination__display-group {
-  margin-left: 1.5em;
-  margin-left: var(--space-m);
+  margin: 0.5em;
+  margin: var(--space-xs);
 }
 
 .pagination__display-label {
@@ -1481,8 +1481,8 @@ select.pagination__display {
 }
 
 .pagination__count {
-  margin-left: 1.5em;
-  margin-left: var(--space-m);
+  margin: 0.5em;
+  margin: var(--space-xs);
 }
 
 .pagination__pages {
@@ -1496,8 +1496,6 @@ select.pagination__display {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-left: 1.5em;
-  margin-left: var(--space-m);
 }
 
 .pagination__pages li a {
