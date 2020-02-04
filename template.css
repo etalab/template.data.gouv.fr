@@ -494,12 +494,30 @@ input[type="button"]:visited {
   margin: 1em 1em 0 0;
 }
 
+a.button:disabled,
+button.button:disabled {
+  color: #fff;
+  color: var(--white);
+  background-color: #c9d3df;
+  background-color: var(--light-grey);
+}
+
 a.button:hover,
 button.button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
   background: #003b80;
   background: var(--theme-secondary-darken);
+}
+
+a.button:disabled:hover,
+button.button:disabled:hover {
+  cursor: auto;
+  cursor: initial;
+  color: #fff;
+  color: var(--white);
+  background-color: #c9d3df;
+  background-color: var(--light-grey);
 }
 
 a.button:active,
@@ -541,6 +559,14 @@ button.button-outline:visited {
   color: var(--white);
 }
 
+a.button-outline:disabled,
+button.button-outline:disabled {
+  color: #c9d3df;
+  color: var(--light-grey);
+  border-color: #c9d3df;
+  border-color: var(--light-grey);
+}
+
 a.button-outline:hover,
 button.button-outline:hover,
 input[type="submit"].button-outline:hover,
@@ -549,6 +575,16 @@ input[type="button"].button-outline:hover {
   border-color: var(--light-grey);
   color: #c9d3df;
   color: var(--light-grey);
+}
+
+a.button-outline:disabled:hover,
+button.button-outline:disabled:hover {
+  cursor: auto;
+  cursor: initial;
+  color: #c9d3df;
+  color: var(--light-grey);
+  border-color: #c9d3df;
+  border-color: var(--light-grey);
 }
 
 .button-outline.primary,
