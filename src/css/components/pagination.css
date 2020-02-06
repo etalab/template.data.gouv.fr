@@ -33,7 +33,7 @@ select.pagination__display {
   padding: 0;
   overflow: hidden;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .pagination__pages li a {
