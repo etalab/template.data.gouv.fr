@@ -2,7 +2,7 @@
 .pagination {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin-top: var(--space-m);
@@ -10,7 +10,7 @@
 /* stylelint-enable declaration-block-no-redundant-longhand-properties */
 
 .pagination__display-group {
-  margin-left: var(--space-m);
+  margin: var(--space-xs);
 }
 
 .pagination__display-label {
@@ -24,7 +24,7 @@ select.pagination__display {
 }
 
 .pagination__count {
-  margin-left: var(--space-m);
+  margin: var(--space-xs);
 }
 
 .pagination__pages {
@@ -34,7 +34,6 @@ select.pagination__display {
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
-  margin-left: var(--space-m);
 }
 
 .pagination__pages li a {
