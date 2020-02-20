@@ -1,3 +1,6 @@
+🚧 Ce dépôt n’est plus maintenu et sera à terme remplacé par une nouvelle version dont le développement est en cours. 🚧
+
+
 # template.data.gouv.fr [![CircleCI](https://circleci.com/gh/etalab/template.data.gouv.fr.svg?style=svg)](https://circleci.com/gh/etalab/template.data.gouv.fr)
 
 Template CSS pour *.beta.gouv.fr, doc.data.gouv.fr et compagnie.
