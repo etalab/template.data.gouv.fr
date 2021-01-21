@@ -1,4 +1,4 @@
-🚧 Ce dépôt n’est plus maintenu et sera à terme remplacé par une nouvelle version dont le développement est en cours. 🚧
+🚧 Ce dépôt n’est plus maintenu et a été remplacé par [template.incubateur.net](http://template.incubateur.net) 🚧
 
 
 # template.data.gouv.fr [![CircleCI](https://circleci.com/gh/etalab/template.data.gouv.fr.svg?style=svg)](https://circleci.com/gh/etalab/template.data.gouv.fr)
