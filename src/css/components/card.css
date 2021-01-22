@@ -11,6 +11,29 @@
   border: 1px solid var(--theme-border-lighter);
 }
 
+.card.card__small .card__cover {
+  border-radius: 50%;
+  min-width: 100px;
+  max-width: 100px;
+  height: 100px;
+  margin: var(--space-xs);
+}
+
+.card.card__small .card__body {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.card.card__small .card__content {
+  padding: var(--space-xs);
+  word-break: break-word;
+}
+
+.card.card__small .card__extra {
+  padding: var(--space-xs);
+}
+
 .row .card + .card {
   margin-left: var(--space-m);
 }
